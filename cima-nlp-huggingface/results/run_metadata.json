@@ -1,0 +1,24 @@
+{
+  "fecha_utc": "2026-10-10T18:07:14.469716+00:00",
+  "dataset": "cima_consultas_cie_sinteticas.csv",
+  "semilla": 2026,
+  "gpu": "Tesla T4",
+  "transformers": "5.18.0",
+  "torch": "2.11.0+cu130",
+  "modelos": {
+    "XLM-R XNLI": "joeddav/xlm-roberta-large-xnli",
+    "mDeBERTa XNLI": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+    "BART MNLI": "facebook/bart-large-mnli"
+  },
+  "hipotesis": "Esta solicitud corresponde a {}.",
+  "labels": {
+    "INDIVIDUAL": "consulta de pagos asignados de un solo inmueble identificado mediante un folio único, incluyendo anticipos, finiquitos o pagos complementarios",
+    "PAQUETE": "solicitud relacionada con varios folios o inmuebles, pagos globales, distribución de importes o ventas de propiedades en paquete",
+    "AMBIGUA": "solicitud de confirmación de pago sin un folio identificable, con referencias insuficientes o sin información para identificar el inmueble",
+    "FUERA_ALCANCE": "solicitud de trámites jurídicos, facturación, arrendamientos, devoluciones, garantías o gestiones distintas a consultar pagos asignados de venta de un inmueble"
+  },
+  "batch_size": 4,
+  "experimento": "E3_AJUSTE_FINAL_ZERO_SHOT",
+  "particion_evaluada": "evaluacion",
+  "errores": []
+}

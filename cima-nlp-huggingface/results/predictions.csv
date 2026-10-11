@@ -1,0 +1,421 @@
+﻿id,texto,clase_real,modelo,prediccion,score_zero_shot,latencia_s_lote_por_elemento
+CIMA-001,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5163655877113342,0.03156788475001804
+CIMA-002,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.4050445556640625,0.03156788475001804
+CIMA-005,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.9759384989738464,0.03156788475001804
+CIMA-006,Favor de confirmar el pago parcial del folio CIMA-F0031.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.8975875377655029,0.03156788475001804
+CIMA-007,¿Qué pagos aparecen asignados al folio CIMA-F0012?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.42471152544021606,0.02276244250003856
+CIMA-008,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.58897864818573,0.02276244250003856
+CIMA-009,"Consulta individual: folio CIMA-F0005, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.5953962802886963,0.02276244250003856
+CIMA-010,Folio CIMA-FX022: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.6420717835426331,0.02276244250003856
+CIMA-011,¿Me ayudas con el folio CIMA-F0006? No sé si es anticipo o finiquito.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9077525734901428,0.01984111000001576
+CIMA-012,Solicito conciliación de 110 folios vendidos juntos bajo operación PK-SIM-022.,PAQUETE,XLM-R XNLI,PAQUETE,0.8994303941726685,0.01984111000001576
+CIMA-013,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-007.",PAQUETE,XLM-R XNLI,PAQUETE,0.8343909382820129,0.01984111000001576
+CIMA-014,¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.4111640155315399,0.01984111000001576
+CIMA-015,"Para CIMA-F0018, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9752650260925293,0.022136366249981165
+CIMA-016,"Consulta individual: folio CIMA-F0035, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.5582782030105591,0.022136366249981165
+CIMA-018,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-038.,PAQUETE,XLM-R XNLI,PAQUETE,0.9076719284057617,0.022136366249981165
+CIMA-019,"Aplicación global de venta: relación adjunta con 5 folios, clave PK-SIM-015.",PAQUETE,XLM-R XNLI,PAQUETE,0.8123073577880859,0.022136366249981165
+CIMA-020,Favor de atender: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,XLM-R XNLI,AMBIGUA,0.3030768036842346,0.019941559250014507
+CIMA-023,"Para CIMA-F0008, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9767322540283203,0.019941559250014507
+CIMA-024,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-002.",PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.4601122736930847,0.019941559250014507
+CIMA-025,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,XLM-R XNLI,PAQUETE,0.3600042462348938,0.019941559250014507
+CIMA-026,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.4050445556640625,0.021056608999970194
+CIMA-028,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.58897864818573,0.021056608999970194
+CIMA-029,Buenas tardes. ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.4381631016731262,0.021056608999970194
+CIMA-031,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,XLM-R XNLI,PAQUETE,0.3600042462348938,0.021056608999970194
+CIMA-032,Buenas tardes. Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.3263184428215027,0.02007145400000354
+CIMA-033,¿Qué pagos aparecen asignados al folio CIMA-F0022?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.4219205975532532,0.02007145400000354
+CIMA-034,Favor de confirmar el aplicación de venta del folio CIMA-F0021.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.48697251081466675,0.02007145400000354
+CIMA-035,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-001.,PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.34698471426963806,0.02007145400000354
+CIMA-036,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-009.,PAQUETE,XLM-R XNLI,PAQUETE,0.4052821099758148,0.024654993750004905
+CIMA-037,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.42523062229156494,0.024654993750004905
+CIMA-038,Favor de atender: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,XLM-R XNLI,PAQUETE,0.3872070610523224,0.024654993750004905
+CIMA-039,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.9759384989738464,0.024654993750004905
+CIMA-040,Confirmen aplicación del anticipo global para 10 folios de la operación PK-SIM-017.,PAQUETE,XLM-R XNLI,PAQUETE,0.4503493905067444,0.02004581899996083
+CIMA-041,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-006.,PAQUETE,XLM-R XNLI,PAQUETE,0.925268292427063,0.02004581899996083
+CIMA-043,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-035?,PAQUETE,XLM-R XNLI,PAQUETE,0.4168645143508911,0.02004581899996083
+CIMA-044,¿Se asignó la transferencia única a los 5 inmuebles de PK-SIM-027?,PAQUETE,XLM-R XNLI,PAQUETE,0.6537454724311829,0.02004581899996083
+CIMA-045,Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.4509313106536865,0.020371377999993
+CIMA-046,El inversionista depositó una sola vez por los 300 activos; ¿cómo quedó distribuido?,PAQUETE,XLM-R XNLI,INDIVIDUAL,0.48698392510414124,0.020371377999993
+CIMA-047,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5163655877113342,0.020371377999993
+CIMA-048,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5694864392280579,0.020371377999993
+CIMA-050,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5163655877113342,0.019780691249991378
+CIMA-051,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.42523062229156494,0.019780691249991378
+CIMA-053,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0010.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.6388609409332275,0.019780691249991378
+CIMA-054,¿Me ayudas con el folio CIMA-F0026? No sé si es anticipo o finiquito.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9068984985351562,0.019780691249991378
+CIMA-055,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-028.",PAQUETE,XLM-R XNLI,INDIVIDUAL,0.638968288898468,0.020552136999981485
+CIMA-057,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-037.,PAQUETE,XLM-R XNLI,INDIVIDUAL,0.45689883828163147,0.020552136999981485
+CIMA-058,Folio CIMA-F0007. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.49526461958885193,0.020552136999981485
+CIMA-059,El inversionista depositó una sola vez por los 8 activos; ¿cómo quedó distribuido?,PAQUETE,XLM-R XNLI,INDIVIDUAL,0.40803152322769165,0.020552136999981485
+CIMA-060,"Aplicación global de venta: relación adjunta con 160 folios, clave PK-SIM-023.",PAQUETE,XLM-R XNLI,PAQUETE,0.8199464082717896,0.019890906999989966
+CIMA-061,Favor de atender: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.43171384930610657,0.019890906999989966
+CIMA-062,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5163655877113342,0.019890906999989966
+CIMA-063,¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.40297284722328186,0.019890906999989966
+CIMA-064,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.9759384989738464,0.0202273242500155
+CIMA-065,Folio CIMA-F0037. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.5614418387413025,0.0202273242500155
+CIMA-066,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.9759384989738464,0.0202273242500155
+CIMA-067,"El anticipo es común, pero cada uno de los 300 folios tiene finiquito individual: revisar PK-SIM-036.",PAQUETE,XLM-R XNLI,INDIVIDUAL,0.7409955859184265,0.0202273242500155
+CIMA-068,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.4050445556640625,0.02080670175001842
+CIMA-069,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.5040243864059448,0.02080670175001842
+CIMA-070,"Necesito consultar los movimientos del folio CIMA-F0013, gracias.",INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.42415112257003784,0.02080670175001842
+CIMA-072,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0030.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.6394354701042175,0.02080670175001842
+CIMA-073,Buenas tardes. Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.39669591188430786,0.021041588000002776
+CIMA-074,Favor de atender: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.4432049095630646,0.021041588000002776
+CIMA-075,"El anticipo es común, pero cada uno de los 35 folios tiene finiquito individual: revisar PK-SIM-020.",PAQUETE,XLM-R XNLI,INDIVIDUAL,0.7134190797805786,0.021041588000002776
+CIMA-076,Folio CIMA-F0017. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.5683001279830933,0.021041588000002776
+CIMA-078,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-013.,PAQUETE,XLM-R XNLI,INDIVIDUAL,0.47185349464416504,0.021311763249968863
+CIMA-079,¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.41175612807273865,0.021311763249968863
+CIMA-080,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0040.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.6233683228492737,0.021311763249968863
+CIMA-081,Favor de atender: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.45531630516052246,0.021311763249968863
+CIMA-082,Favor de atender: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.4957212209701538,0.020048728500000834
+CIMA-083,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-030.,PAQUETE,XLM-R XNLI,PAQUETE,0.9272403717041016,0.020048728500000834
+CIMA-084,"Consulta individual: folio CIMA-F0025, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.6040202975273132,0.020048728500000834
+CIMA-085,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-025.,PAQUETE,XLM-R XNLI,PAQUETE,0.33436769247055054,0.020048728500000834
+CIMA-086,¿Me ayudas con el folio CIMA-F0016? No sé si es anticipo o finiquito.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9053812623023987,0.020350689249994502
+CIMA-087,Folio CIMA-FX027: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.6438295245170593,0.020350689249994502
+CIMA-088,¿Puedes revisar si existe aplicación de venta para el folio CIMA-F0014?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.3981683552265167,0.020350689249994502
+CIMA-089,Folio CIMA-FX030: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.3620561957359314,0.020350689249994502
+CIMA-090,Folio CIMA-FX021: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.8537440299987793,0.024392091249978876
+CIMA-091,"Para CIMA-F0038, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9762406349182129,0.024392091249978876
+CIMA-092,Folio CIMA-FX025: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.8489682674407959,0.024392091249978876
+CIMA-093,Folio CIMA-FX026: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.4561763107776642,0.024392091249978876
+CIMA-094,Favor de atender: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.3491663336753845,0.020049515999971845
+CIMA-095,Buenas tardes. ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.45892927050590515,0.020049515999971845
+CIMA-096,"Consulta individual: folio CIMA-F0015, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.5591577291488647,0.020049515999971845
+CIMA-097,"Para CIMA-F0028, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9762792587280273,0.020049515999971845
+CIMA-098,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,XLM-R XNLI,AMBIGUA,0.3712039887905121,0.019378981499983183
+CIMA-099,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,XLM-R XNLI,AMBIGUA,0.3712039887905121,0.019378981499983183
+CIMA-100,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,XLM-R XNLI,AMBIGUA,0.3712039887905121,0.019378981499983183
+CIMA-101,Folio CIMA-FX023: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.46148446202278137,0.019378981499983183
+CIMA-103,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-031.",PAQUETE,XLM-R XNLI,PAQUETE,0.8426680564880371,0.020521277249997638
+CIMA-104,Buenas tardes. ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.3707254230976105,0.020521277249997638
+CIMA-106,Favor de confirmar el complemento de venta del folio CIMA-F0011.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.6126536130905151,0.020521277249997638
+CIMA-107,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.4987748861312866,0.020521277249997638
+CIMA-109,Favor de atender: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.7005125880241394,0.022276510999972743
+CIMA-111,¿Qué pagos aparecen asignados al folio CIMA-F0032?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.4189271330833435,0.022276510999972743
+CIMA-112,¿Puedes revisar si existe complemento de venta para el folio CIMA-F0004?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.7634670734405518,0.022276510999972743
+CIMA-113,¿Cuál es la información disponible del folio CIMA-F0029?,INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.5525760650634766,0.022276510999972743
+CIMA-114,¿Puedes revisar si existe depósitos asignados para el folio CIMA-F0034?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.49644458293914795,0.02196775049998223
+CIMA-115,¿Cuál es la información disponible del folio CIMA-F0039?,INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.5555559396743774,0.02196775049998223
+CIMA-116,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-011?,PAQUETE,XLM-R XNLI,PAQUETE,0.4036541283130646,0.02196775049998223
+CIMA-117,El inversionista depositó una sola vez por los 35 activos; ¿cómo quedó distribuido?,PAQUETE,XLM-R XNLI,INDIVIDUAL,0.4611969590187073,0.02196775049998223
+CIMA-118,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-014.,PAQUETE,XLM-R XNLI,PAQUETE,0.9078620076179504,0.019950515749997066
+CIMA-119,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5694864392280579,0.019950515749997066
+CIMA-120,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-026.",PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.4823736250400543,0.019950515749997066
+CIMA-121,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-033.,PAQUETE,XLM-R XNLI,PAQUETE,0.439715176820755,0.019950515749997066
+CIMA-122,Folio CIMA-FX028: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.5764397978782654,0.019904053499999463
+CIMA-123,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.4050445556640625,0.019904053499999463
+CIMA-124,¿Cuál es la información disponible del folio CIMA-F0019?,INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.5556007623672485,0.019904053499999463
+CIMA-125,"Envío Excel con la distribución de finiquito entre 12 folios, paquete PK-SIM-018.",PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.45182642340660095,0.019904053499999463
+CIMA-126,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,XLM-R XNLI,PAQUETE,0.3600042462348938,0.01997932224998067
+CIMA-127,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.5040243864059448,0.01997932224998067
+CIMA-128,Favor de atender: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,XLM-R XNLI,AMBIGUA,0.3070559799671173,0.01997932224998067
+CIMA-130,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,XLM-R XNLI,AMBIGUA,0.3712039887905121,0.01997932224998067
+CIMA-131,Folio CIMA-FX029: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.5222989916801453,0.021799890250008502
+CIMA-132,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.58897864818573,0.021799890250008502
+CIMA-133,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,XLM-R XNLI,PAQUETE,0.3600042462348938,0.021799890250008502
+CIMA-134,"Necesito consultar los movimientos del folio CIMA-F0033, gracias.",INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.4364796578884125,0.021799890250008502
+CIMA-135,¿Qué pagos aparecen asignados al folio CIMA-F0002?,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.4422053098678589,0.020301184999993893
+CIMA-136,"Necesito consultar los movimientos del folio CIMA-F0023, gracias.",INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.431469202041626,0.020301184999993893
+CIMA-137,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-005.,PAQUETE,XLM-R XNLI,PAQUETE,0.554875910282135,0.020301184999993893
+CIMA-138,Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.382411390542984,0.020301184999993893
+CIMA-139,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,XLM-R XNLI,FUERA_ALCANCE,0.42523062229156494,0.01990751674998137
+CIMA-140,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-029.,PAQUETE,XLM-R XNLI,PAQUETE,0.5723193883895874,0.01990751674998137
+CIMA-141,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.4987748861312866,0.01990751674998137
+CIMA-142,Buenas tardes. Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.40953895449638367,0.01990751674998137
+CIMA-143,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.4987748861312866,0.019751032750036757
+CIMA-144,Favor de atender: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.45898011326789856,0.019751032750036757
+CIMA-145,¿Se asignó la transferencia única a los 20 inmuebles de PK-SIM-019?,PAQUETE,XLM-R XNLI,PAQUETE,0.6148474812507629,0.019751032750036757
+CIMA-146,¿Me ayudas con el folio CIMA-F0036? No sé si es anticipo o finiquito.,INDIVIDUAL,XLM-R XNLI,INDIVIDUAL,0.9056038856506348,0.019751032750036757
+CIMA-147,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-004.",PAQUETE,XLM-R XNLI,INDIVIDUAL,0.636146605014801,0.024113605499962887
+CIMA-148,Buenas tardes. Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.6448259353637695,0.024113605499962887
+CIMA-149,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,XLM-R XNLI,AMBIGUA,0.4987748861312866,0.024113605499962887
+CIMA-150,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-010.",PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.4249125123023987,0.024113605499962887
+CIMA-151,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-034.",PAQUETE,XLM-R XNLI,FUERA_ALCANCE,0.43792659044265747,0.020308894500033148
+CIMA-152,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,XLM-R XNLI,INDIVIDUAL,0.5694864392280579,0.020308894500033148
+CIMA-154,Folio CIMA-FX024: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.47396042943000793,0.020308894500033148
+CIMA-155,¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.4570517838001251,0.020308894500033148
+CIMA-156,Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,XLM-R XNLI,INDIVIDUAL,0.3480363190174103,0.02074516849995689
+CIMA-158,¿Cuál es la información disponible del folio CIMA-F0009?,INDIVIDUAL,XLM-R XNLI,FUERA_ALCANCE,0.5628131628036499,0.02074516849995689
+CIMA-159,Buenas tardes. ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,XLM-R XNLI,FUERA_ALCANCE,0.42922693490982056,0.02074516849995689
+CIMA-160,Validar los pagos parciales repartidos entre 75 folios en PK-SIM-021.,PAQUETE,XLM-R XNLI,PAQUETE,0.5410221219062805,0.02074516849995689
+CIMA-001,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.4247000515460968,0.026295790749998105
+CIMA-002,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8638811111450195,0.026295790749998105
+CIMA-005,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.9626772403717041,0.026295790749998105
+CIMA-006,Favor de confirmar el pago parcial del folio CIMA-F0031.,INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.4662477970123291,0.026295790749998105
+CIMA-007,¿Qué pagos aparecen asignados al folio CIMA-F0012?,INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.423479288816452,0.029128634500011685
+CIMA-008,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.38385823369026184,0.029128634500011685
+CIMA-009,"Consulta individual: folio CIMA-F0005, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.5459904670715332,0.029128634500011685
+CIMA-010,Folio CIMA-FX022: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.9734264612197876,0.029128634500011685
+CIMA-011,¿Me ayudas con el folio CIMA-F0006? No sé si es anticipo o finiquito.,INDIVIDUAL,mDeBERTa XNLI,AMBIGUA,0.4285162091255188,0.025465842999949473
+CIMA-012,Solicito conciliación de 110 folios vendidos juntos bajo operación PK-SIM-022.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.9887441396713257,0.025465842999949473
+CIMA-013,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-007.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.9950722455978394,0.025465842999949473
+CIMA-014,¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.3850315809249878,0.025465842999949473
+CIMA-015,"Para CIMA-F0018, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.738399088382721,0.024322664999999688
+CIMA-016,"Consulta individual: folio CIMA-F0035, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.48561564087867737,0.024322664999999688
+CIMA-018,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-038.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.9854617118835449,0.024322664999999688
+CIMA-019,"Aplicación global de venta: relación adjunta con 5 folios, clave PK-SIM-015.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.9954125881195068,0.024322664999999688
+CIMA-020,Favor de atender: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6465104818344116,0.025433501000009073
+CIMA-023,"Para CIMA-F0008, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.6411702632904053,0.025433501000009073
+CIMA-024,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-002.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.8717945218086243,0.025433501000009073
+CIMA-025,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8226092457771301,0.025433501000009073
+CIMA-026,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8638811111450195,0.02612572300000693
+CIMA-028,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.38385823369026184,0.02612572300000693
+CIMA-029,Buenas tardes. ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6314655542373657,0.02612572300000693
+CIMA-031,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8226092457771301,0.02612572300000693
+CIMA-032,Buenas tardes. Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6087813377380371,0.02731749399998762
+CIMA-033,¿Qué pagos aparecen asignados al folio CIMA-F0022?,INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.4312320351600647,0.02731749399998762
+CIMA-034,Favor de confirmar el aplicación de venta del folio CIMA-F0021.,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.4033930003643036,0.02731749399998762
+CIMA-035,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-001.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.40963539481163025,0.02731749399998762
+CIMA-036,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-009.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.904644787311554,0.025290347750001274
+CIMA-037,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,mDeBERTa XNLI,FUERA_ALCANCE,0.4017210304737091,0.025290347750001274
+CIMA-038,Favor de atender: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.49553078413009644,0.025290347750001274
+CIMA-039,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.9626772403717041,0.025290347750001274
+CIMA-040,Confirmen aplicación del anticipo global para 10 folios de la operación PK-SIM-017.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.703294038772583,0.02392133624999815
+CIMA-041,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-006.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.9888339638710022,0.02392133624999815
+CIMA-043,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-035?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.43860509991645813,0.02392133624999815
+CIMA-044,¿Se asignó la transferencia única a los 5 inmuebles de PK-SIM-027?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.5106338858604431,0.02392133624999815
+CIMA-045,Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.7123082876205444,0.025320653249991665
+CIMA-046,El inversionista depositó una sola vez por los 300 activos; ¿cómo quedó distribuido?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.6363287568092346,0.025320653249991665
+CIMA-047,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.4247000515460968,0.025320653249991665
+CIMA-048,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,mDeBERTa XNLI,PAQUETE,0.46171069145202637,0.025320653249991665
+CIMA-050,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.4247000515460968,0.02598558500000081
+CIMA-051,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,mDeBERTa XNLI,FUERA_ALCANCE,0.4017210304737091,0.02598558500000081
+CIMA-053,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0010.",INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.6003984212875366,0.02598558500000081
+CIMA-054,¿Me ayudas con el folio CIMA-F0026? No sé si es anticipo o finiquito.,INDIVIDUAL,mDeBERTa XNLI,AMBIGUA,0.3771723210811615,0.02598558500000081
+CIMA-055,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-028.",PAQUETE,mDeBERTa XNLI,INDIVIDUAL,0.7396475672721863,0.028087936750011977
+CIMA-057,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-037.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.7835308909416199,0.028087936750011977
+CIMA-058,Folio CIMA-F0007. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.8214802742004395,0.028087936750011977
+CIMA-059,El inversionista depositó una sola vez por los 8 activos; ¿cómo quedó distribuido?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.6404187679290771,0.028087936750011977
+CIMA-060,"Aplicación global de venta: relación adjunta con 160 folios, clave PK-SIM-023.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.9948551654815674,0.023751488500010964
+CIMA-061,Favor de atender: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.5256634950637817,0.023751488500010964
+CIMA-062,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.4247000515460968,0.023751488500010964
+CIMA-063,¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.5012490749359131,0.023751488500010964
+CIMA-064,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.9626772403717041,0.02447770999998511
+CIMA-065,Folio CIMA-F0037. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.8581620454788208,0.02447770999998511
+CIMA-066,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.9626772403717041,0.02447770999998511
+CIMA-067,"El anticipo es común, pero cada uno de los 300 folios tiene finiquito individual: revisar PK-SIM-036.",PAQUETE,mDeBERTa XNLI,INDIVIDUAL,0.6029040813446045,0.02447770999998511
+CIMA-068,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8638811111450195,0.02447179250003728
+CIMA-069,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.3979392945766449,0.02447179250003728
+CIMA-070,"Necesito consultar los movimientos del folio CIMA-F0013, gracias.",INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.5483206510543823,0.02447179250003728
+CIMA-072,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0030.",INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.55979984998703,0.02447179250003728
+CIMA-073,Buenas tardes. Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.7542919516563416,0.025004889499996352
+CIMA-074,Favor de atender: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.43124082684516907,0.025004889499996352
+CIMA-075,"El anticipo es común, pero cada uno de los 35 folios tiene finiquito individual: revisar PK-SIM-020.",PAQUETE,mDeBERTa XNLI,INDIVIDUAL,0.5568355321884155,0.025004889499996352
+CIMA-076,Folio CIMA-F0017. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.8297112584114075,0.025004889499996352
+CIMA-078,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-013.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.7748024463653564,0.02522135649996926
+CIMA-079,¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.5345566272735596,0.02522135649996926
+CIMA-080,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0040.",INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.5806331634521484,0.02522135649996926
+CIMA-081,Favor de atender: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.47696900367736816,0.02522135649996926
+CIMA-082,Favor de atender: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6293257474899292,0.023963782000009815
+CIMA-083,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-030.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.978944718837738,0.023963782000009815
+CIMA-084,"Consulta individual: folio CIMA-F0025, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.5265820622444153,0.023963782000009815
+CIMA-085,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-025.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.4452733099460602,0.023963782000009815
+CIMA-086,¿Me ayudas con el folio CIMA-F0016? No sé si es anticipo o finiquito.,INDIVIDUAL,mDeBERTa XNLI,AMBIGUA,0.4094087481498718,0.02381501224999738
+CIMA-087,Folio CIMA-FX027: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.7635974287986755,0.02381501224999738
+CIMA-088,¿Puedes revisar si existe aplicación de venta para el folio CIMA-F0014?,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.41713643074035645,0.02381501224999738
+CIMA-089,Folio CIMA-FX030: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.7418990135192871,0.02381501224999738
+CIMA-090,Folio CIMA-FX021: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.8377749919891357,0.025168589000031716
+CIMA-091,"Para CIMA-F0038, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.8002728819847107,0.025168589000031716
+CIMA-092,Folio CIMA-FX025: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.8726897835731506,0.025168589000031716
+CIMA-093,Folio CIMA-FX026: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.8197370171546936,0.025168589000031716
+CIMA-094,Favor de atender: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6776185631752014,0.024609395249967747
+CIMA-095,Buenas tardes. ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.5298142433166504,0.024609395249967747
+CIMA-096,"Consulta individual: folio CIMA-F0015, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.5141522884368896,0.024609395249967747
+CIMA-097,"Para CIMA-F0028, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.72971510887146,0.024609395249967747
+CIMA-098,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8198167085647583,0.027668981500028167
+CIMA-099,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8198167085647583,0.027668981500028167
+CIMA-100,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8198167085647583,0.027668981500028167
+CIMA-101,Folio CIMA-FX023: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.7989370226860046,0.027668981500028167
+CIMA-103,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-031.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.9951289892196655,0.025993747499967412
+CIMA-104,Buenas tardes. ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.5825144052505493,0.025993747499967412
+CIMA-106,Favor de confirmar el complemento de venta del folio CIMA-F0011.,INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.40266841650009155,0.025993747499967412
+CIMA-107,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.6824958324432373,0.025993747499967412
+CIMA-109,Favor de atender: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.4049336910247803,0.024859456499996213
+CIMA-111,¿Qué pagos aparecen asignados al folio CIMA-F0032?,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.4269745647907257,0.024859456499996213
+CIMA-112,¿Puedes revisar si existe complemento de venta para el folio CIMA-F0004?,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.45709794759750366,0.024859456499996213
+CIMA-113,¿Cuál es la información disponible del folio CIMA-F0029?,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.38378793001174927,0.024859456499996213
+CIMA-114,¿Puedes revisar si existe depósitos asignados para el folio CIMA-F0034?,INDIVIDUAL,mDeBERTa XNLI,INDIVIDUAL,0.48944371938705444,0.023957458499978657
+CIMA-115,¿Cuál es la información disponible del folio CIMA-F0039?,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.38194265961647034,0.023957458499978657
+CIMA-116,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-011?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.4382414221763611,0.023957458499978657
+CIMA-117,El inversionista depositó una sola vez por los 35 activos; ¿cómo quedó distribuido?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.6031761169433594,0.023957458499978657
+CIMA-118,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-014.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.9868224263191223,0.023980789999995977
+CIMA-119,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,mDeBERTa XNLI,PAQUETE,0.46171069145202637,0.023980789999995977
+CIMA-120,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-026.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.8913240432739258,0.023980789999995977
+CIMA-121,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-033.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.8427711725234985,0.023980789999995977
+CIMA-122,Folio CIMA-FX028: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.938814103603363,0.025695730499990077
+CIMA-123,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8638811111450195,0.025695730499990077
+CIMA-124,¿Cuál es la información disponible del folio CIMA-F0019?,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.39522746205329895,0.025695730499990077
+CIMA-125,"Envío Excel con la distribución de finiquito entre 12 folios, paquete PK-SIM-018.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.8300992250442505,0.025695730499990077
+CIMA-126,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8226092457771301,0.02386376474998997
+CIMA-127,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.3979392945766449,0.02386376474998997
+CIMA-128,Favor de atender: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.7311397790908813,0.02386376474998997
+CIMA-130,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8198167085647583,0.02386376474998997
+CIMA-131,Folio CIMA-FX029: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.7422486543655396,0.023422721500026
+CIMA-132,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,mDeBERTa XNLI,PAQUETE,0.38385823369026184,0.023422721500026
+CIMA-133,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.8226092457771301,0.023422721500026
+CIMA-134,"Necesito consultar los movimientos del folio CIMA-F0033, gracias.",INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.5634403228759766,0.023422721500026
+CIMA-135,¿Qué pagos aparecen asignados al folio CIMA-F0002?,INDIVIDUAL,mDeBERTa XNLI,PAQUETE,0.4369131028652191,0.02420243575005543
+CIMA-136,"Necesito consultar los movimientos del folio CIMA-F0023, gracias.",INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.5436829924583435,0.02420243575005543
+CIMA-137,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-005.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.8382778167724609,0.02420243575005543
+CIMA-138,Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6688708662986755,0.02420243575005543
+CIMA-139,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,mDeBERTa XNLI,FUERA_ALCANCE,0.4017210304737091,0.02367981924999185
+CIMA-140,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-029.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.8965161442756653,0.02367981924999185
+CIMA-141,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.6824958324432373,0.02367981924999185
+CIMA-142,Buenas tardes. Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.7274582982063293,0.02367981924999185
+CIMA-143,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.6824958324432373,0.02553331349997734
+CIMA-144,Favor de atender: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.40767204761505127,0.02553331349997734
+CIMA-145,¿Se asignó la transferencia única a los 20 inmuebles de PK-SIM-019?,PAQUETE,mDeBERTa XNLI,PAQUETE,0.4901062250137329,0.02553331349997734
+CIMA-146,¿Me ayudas con el folio CIMA-F0036? No sé si es anticipo o finiquito.,INDIVIDUAL,mDeBERTa XNLI,AMBIGUA,0.5092229843139648,0.02553331349997734
+CIMA-147,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-004.",PAQUETE,mDeBERTa XNLI,INDIVIDUAL,0.736079752445221,0.026317954499972984
+CIMA-148,Buenas tardes. Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.4522789418697357,0.026317954499972984
+CIMA-149,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,mDeBERTa XNLI,AMBIGUA,0.6824958324432373,0.026317954499972984
+CIMA-150,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-010.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.8285691738128662,0.026317954499972984
+CIMA-151,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-034.",PAQUETE,mDeBERTa XNLI,PAQUETE,0.8181008696556091,0.024427417250024064
+CIMA-152,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,mDeBERTa XNLI,PAQUETE,0.46171069145202637,0.024427417250024064
+CIMA-154,Folio CIMA-FX024: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,mDeBERTa XNLI,INDIVIDUAL,0.8538687825202942,0.024427417250024064
+CIMA-155,¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.45733413100242615,0.024427417250024064
+CIMA-156,Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,mDeBERTa XNLI,FUERA_ALCANCE,0.6584279537200928,0.024114983499998743
+CIMA-158,¿Cuál es la información disponible del folio CIMA-F0009?,INDIVIDUAL,mDeBERTa XNLI,FUERA_ALCANCE,0.3931800425052643,0.024114983499998743
+CIMA-159,Buenas tardes. ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,mDeBERTa XNLI,PAQUETE,0.3504747450351715,0.024114983499998743
+CIMA-160,Validar los pagos parciales repartidos entre 75 folios en PK-SIM-021.,PAQUETE,mDeBERTa XNLI,PAQUETE,0.9015806317329407,0.024114983499998743
+CIMA-001,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,BART MNLI,AMBIGUA,0.31898078322410583,0.04392713649997404
+CIMA-002,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,BART MNLI,AMBIGUA,0.5522544980049133,0.04392713649997404
+CIMA-005,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,BART MNLI,AMBIGUA,0.47953692078590393,0.04392713649997404
+CIMA-006,Favor de confirmar el pago parcial del folio CIMA-F0031.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.49675530195236206,0.04392713649997404
+CIMA-007,¿Qué pagos aparecen asignados al folio CIMA-F0012?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5473543405532837,0.04346118450001768
+CIMA-008,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,BART MNLI,AMBIGUA,0.33641156554222107,0.04346118450001768
+CIMA-009,"Consulta individual: folio CIMA-F0005, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.48763513565063477,0.04346118450001768
+CIMA-010,Folio CIMA-FX022: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,BART MNLI,PAQUETE,0.3849238455295563,0.04346118450001768
+CIMA-011,¿Me ayudas con el folio CIMA-F0006? No sé si es anticipo o finiquito.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.800710141658783,0.03407317199997806
+CIMA-012,Solicito conciliación de 110 folios vendidos juntos bajo operación PK-SIM-022.,PAQUETE,BART MNLI,PAQUETE,0.5639800429344177,0.03407317199997806
+CIMA-013,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-007.",PAQUETE,BART MNLI,PAQUETE,0.7256773710250854,0.03407317199997806
+CIMA-014,¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.331753134727478,0.03407317199997806
+CIMA-015,"Para CIMA-F0018, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.31815844774246216,0.027139797250015363
+CIMA-016,"Consulta individual: folio CIMA-F0035, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.4861312806606293,0.027139797250015363
+CIMA-018,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-038.,PAQUETE,BART MNLI,PAQUETE,0.6410695314407349,0.027139797250015363
+CIMA-019,"Aplicación global de venta: relación adjunta con 5 folios, clave PK-SIM-015.",PAQUETE,BART MNLI,PAQUETE,0.7116343975067139,0.027139797250015363
+CIMA-020,Favor de atender: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.47375884652137756,0.026327756999990015
+CIMA-023,"Para CIMA-F0008, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.327128529548645,0.026327756999990015
+CIMA-024,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-002.",PAQUETE,BART MNLI,PAQUETE,0.5758479833602905,0.026327756999990015
+CIMA-025,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,BART MNLI,AMBIGUA,0.4476642608642578,0.026327756999990015
+CIMA-026,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,BART MNLI,AMBIGUA,0.5522544980049133,0.02754671050001889
+CIMA-028,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,BART MNLI,AMBIGUA,0.33641156554222107,0.02754671050001889
+CIMA-029,Buenas tardes. ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.2821442484855652,0.02754671050001889
+CIMA-031,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,BART MNLI,AMBIGUA,0.4476642608642578,0.02754671050001889
+CIMA-032,Buenas tardes. Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.4334740936756134,0.03142763949995242
+CIMA-033,¿Qué pagos aparecen asignados al folio CIMA-F0022?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5469756126403809,0.03142763949995242
+CIMA-034,Favor de confirmar el aplicación de venta del folio CIMA-F0021.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5440183281898499,0.03142763949995242
+CIMA-035,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-001.,PAQUETE,BART MNLI,PAQUETE,0.5665121674537659,0.03142763949995242
+CIMA-036,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-009.,PAQUETE,BART MNLI,PAQUETE,0.5602759718894958,0.026289349499961645
+CIMA-037,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,BART MNLI,AMBIGUA,0.3753221035003662,0.026289349499961645
+CIMA-038,Favor de atender: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.547610342502594,0.026289349499961645
+CIMA-039,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,BART MNLI,AMBIGUA,0.47953692078590393,0.026289349499961645
+CIMA-040,Confirmen aplicación del anticipo global para 10 folios de la operación PK-SIM-017.,PAQUETE,BART MNLI,PAQUETE,0.5481250882148743,0.026825224499987144
+CIMA-041,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-006.,PAQUETE,BART MNLI,PAQUETE,0.6298502087593079,0.026825224499987144
+CIMA-043,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-035?,PAQUETE,BART MNLI,PAQUETE,0.33873021602630615,0.026825224499987144
+CIMA-044,¿Se asignó la transferencia única a los 5 inmuebles de PK-SIM-027?,PAQUETE,BART MNLI,PAQUETE,0.3808158338069916,0.026825224499987144
+CIMA-045,Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,BART MNLI,PAQUETE,0.31226640939712524,0.026283827749978173
+CIMA-046,El inversionista depositó una sola vez por los 300 activos; ¿cómo quedó distribuido?,PAQUETE,BART MNLI,INDIVIDUAL,0.2843417227268219,0.026283827749978173
+CIMA-047,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,BART MNLI,AMBIGUA,0.31898078322410583,0.026283827749978173
+CIMA-048,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,BART MNLI,INDIVIDUAL,0.3244970440864563,0.026283827749978173
+CIMA-050,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,BART MNLI,AMBIGUA,0.31898078322410583,0.026284252999971613
+CIMA-051,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,BART MNLI,AMBIGUA,0.3753221035003662,0.026284252999971613
+CIMA-053,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0010.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.328765869140625,0.026284252999971613
+CIMA-054,¿Me ayudas con el folio CIMA-F0026? No sé si es anticipo o finiquito.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.793155312538147,0.026284252999971613
+CIMA-055,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-028.",PAQUETE,BART MNLI,PAQUETE,0.46019652485847473,0.02652701850001904
+CIMA-057,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-037.,PAQUETE,BART MNLI,PAQUETE,0.4382360279560089,0.02652701850001904
+CIMA-058,Folio CIMA-F0007. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.36500033736228943,0.02652701850001904
+CIMA-059,El inversionista depositó una sola vez por los 8 activos; ¿cómo quedó distribuido?,PAQUETE,BART MNLI,INDIVIDUAL,0.2939739525318146,0.02652701850001904
+CIMA-060,"Aplicación global de venta: relación adjunta con 160 folios, clave PK-SIM-023.",PAQUETE,BART MNLI,PAQUETE,0.7256782054901123,0.02599165749995791
+CIMA-061,Favor de atender: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.3754032850265503,0.02599165749995791
+CIMA-062,Hay un SPEI pendiente de identificación. ¿Se puede confirmar el pago?,AMBIGUA,BART MNLI,AMBIGUA,0.31898078322410583,0.02599165749995791
+CIMA-063,¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.34167879819869995,0.02599165749995791
+CIMA-064,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,BART MNLI,AMBIGUA,0.47953692078590393,0.02621418050000557
+CIMA-065,Folio CIMA-F0037. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.3533184230327606,0.02621418050000557
+CIMA-066,"Necesito saber si fue anticipo o finiquito, pero no dispongo de la referencia del inmueble.",AMBIGUA,BART MNLI,AMBIGUA,0.47953692078590393,0.02621418050000557
+CIMA-067,"El anticipo es común, pero cada uno de los 300 folios tiene finiquito individual: revisar PK-SIM-036.",PAQUETE,BART MNLI,INDIVIDUAL,0.433305948972702,0.02621418050000557
+CIMA-068,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,BART MNLI,AMBIGUA,0.5522544980049133,0.025602335499968376
+CIMA-069,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,BART MNLI,AMBIGUA,0.5641200542449951,0.025602335499968376
+CIMA-070,"Necesito consultar los movimientos del folio CIMA-F0013, gracias.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5204970240592957,0.025602335499968376
+CIMA-072,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0030.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.2950358986854553,0.025602335499968376
+CIMA-073,Buenas tardes. Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.33374184370040894,0.02920780724997485
+CIMA-074,Favor de atender: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.30904337763786316,0.02920780724997485
+CIMA-075,"El anticipo es común, pero cada uno de los 35 folios tiene finiquito individual: revisar PK-SIM-020.",PAQUETE,BART MNLI,PAQUETE,0.442851185798645,0.02920780724997485
+CIMA-076,Folio CIMA-F0017. Requiero los depósitos registrados que tengan VALIDACIÓN Asignado.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.3483542799949646,0.02920780724997485
+CIMA-078,Validar los pagos parciales repartidos entre 2 folios en PK-SIM-013.,PAQUETE,BART MNLI,PAQUETE,0.4295719265937805,0.02703189950000251
+CIMA-079,¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.48356136679649353,0.02703189950000251
+CIMA-080,"Buen día, confirma los movimientos de venta vinculados a CIMA-F0040.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.28798529505729675,0.02703189950000251
+CIMA-081,Favor de atender: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.4247826337814331,0.02703189950000251
+CIMA-082,Favor de atender: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.30706554651260376,0.027730206749993158
+CIMA-083,Solicito conciliación de 12 folios vendidos juntos bajo operación PK-SIM-030.,PAQUETE,BART MNLI,PAQUETE,0.6150718927383423,0.027730206749993158
+CIMA-084,"Consulta individual: folio CIMA-F0025, transferencia SPEI, ¿qué aplicación tiene?",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.48563531041145325,0.027730206749993158
+CIMA-085,Confirmen aplicación del anticipo global para 2 folios de la operación PK-SIM-025.,PAQUETE,BART MNLI,PAQUETE,0.5767068266868591,0.027730206749993158
+CIMA-086,¿Me ayudas con el folio CIMA-F0016? No sé si es anticipo o finiquito.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.7945948243141174,0.028279944750011055
+CIMA-087,Folio CIMA-FX027: ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,BART MNLI,PAQUETE,0.36103522777557373,0.028279944750011055
+CIMA-088,¿Puedes revisar si existe aplicación de venta para el folio CIMA-F0014?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5185011029243469,0.028279944750011055
+CIMA-089,Folio CIMA-FX030: Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.3608338236808777,0.028279944750011055
+CIMA-090,Folio CIMA-FX021: ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.5242903828620911,0.02708685999999716
+CIMA-091,"Para CIMA-F0038, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.31935831904411316,0.02708685999999716
+CIMA-092,Folio CIMA-FX025: ¿Cómo se registra el gasto de desafectos de este activo?,FUERA_ALCANCE,BART MNLI,PAQUETE,0.39887601137161255,0.02708685999999716
+CIMA-093,Folio CIMA-FX026: Solicito cálculo y registro de intereses.,FUERA_ALCANCE,BART MNLI,PAQUETE,0.4192991256713867,0.02708685999999716
+CIMA-094,Favor de atender: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.3806002736091614,0.02624223875000098
+CIMA-095,Buenas tardes. ¿Cuál es el avance jurídico para escriturar el inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.35640576481819153,0.02624223875000098
+CIMA-096,"Consulta individual: folio CIMA-F0015, transferencia interbancaria, ¿qué aplicación tiene?",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.4804995059967041,0.02624223875000098
+CIMA-097,"Para CIMA-F0028, revisa si hay finiquito o pagos parciales asignados.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.3232247829437256,0.02624223875000098
+CIMA-098,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,BART MNLI,AMBIGUA,0.6576984524726868,0.03575538350003171
+CIMA-099,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,BART MNLI,AMBIGUA,0.6576984524726868,0.03575538350003171
+CIMA-100,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,BART MNLI,AMBIGUA,0.6576984524726868,0.03575538350003171
+CIMA-101,Folio CIMA-FX023: Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,BART MNLI,PAQUETE,0.3267727196216583,0.03575538350003171
+CIMA-103,"Aplicación global de venta: relación adjunta con 20 folios, clave PK-SIM-031.",PAQUETE,BART MNLI,PAQUETE,0.7264308929443359,0.027157439999996313
+CIMA-104,Buenas tardes. ¿Me indicas el pago de renta o arrendamiento del inmueble?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.5095970630645752,0.027157439999996313
+CIMA-106,Favor de confirmar el complemento de venta del folio CIMA-F0011.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.7547037601470947,0.027157439999996313
+CIMA-107,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,BART MNLI,AMBIGUA,0.6078819036483765,0.027157439999996313
+CIMA-109,Favor de atender: Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.28648751974105835,0.026332942500005174
+CIMA-111,¿Qué pagos aparecen asignados al folio CIMA-F0032?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.541681706905365,0.026332942500005174
+CIMA-112,¿Puedes revisar si existe complemento de venta para el folio CIMA-F0004?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.7461715340614319,0.026332942500005174
+CIMA-113,¿Cuál es la información disponible del folio CIMA-F0029?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.4948001205921173,0.026332942500005174
+CIMA-114,¿Puedes revisar si existe depósitos asignados para el folio CIMA-F0034?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5417835116386414,0.02825188000002754
+CIMA-115,¿Cuál es la información disponible del folio CIMA-F0039?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.49688854813575745,0.02825188000002754
+CIMA-116,¿Se asignó la transferencia única a los 160 inmuebles de PK-SIM-011?,PAQUETE,BART MNLI,PAQUETE,0.3473937213420868,0.02825188000002754
+CIMA-117,El inversionista depositó una sola vez por los 35 activos; ¿cómo quedó distribuido?,PAQUETE,BART MNLI,INDIVIDUAL,0.2983631193637848,0.02825188000002754
+CIMA-118,Solicito conciliación de 3 folios vendidos juntos bajo operación PK-SIM-014.,PAQUETE,BART MNLI,PAQUETE,0.6406243443489075,0.027773566250004933
+CIMA-119,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,BART MNLI,INDIVIDUAL,0.3244970440864563,0.027773566250004933
+CIMA-120,"Envío Excel con la distribución de finiquito entre 3 folios, paquete PK-SIM-026.",PAQUETE,BART MNLI,PAQUETE,0.5806231498718262,0.027773566250004933
+CIMA-121,Confirmen aplicación del anticipo global para 75 folios de la operación PK-SIM-033.,PAQUETE,BART MNLI,PAQUETE,0.5732035636901855,0.027773566250004933
+CIMA-122,Folio CIMA-FX028: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,BART MNLI,PAQUETE,0.35387447476387024,0.02653238724997209
+CIMA-123,"Solicito confirmar este depósito, pero todavía no tengo folio asignado.",AMBIGUA,BART MNLI,AMBIGUA,0.5522544980049133,0.02653238724997209
+CIMA-124,¿Cuál es la información disponible del folio CIMA-F0019?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.4938652515411377,0.02653238724997209
+CIMA-125,"Envío Excel con la distribución de finiquito entre 12 folios, paquete PK-SIM-018.",PAQUETE,BART MNLI,PAQUETE,0.5794054269790649,0.02653238724997209
+CIMA-126,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,BART MNLI,AMBIGUA,0.4476642608642578,0.025259204500002852
+CIMA-127,"Por favor valida el dinero que entró, aún no se identifica su asignación.",AMBIGUA,BART MNLI,AMBIGUA,0.5641200542449951,0.025259204500002852
+CIMA-128,Favor de atender: Necesito determinar el impuesto por la transmisión del inmueble.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.2996048331260681,0.025259204500002852
+CIMA-130,¿Me ayudas con el pago que te comenté? No encuentro la referencia.,AMBIGUA,BART MNLI,AMBIGUA,0.6576984524726868,0.025259204500002852
+CIMA-131,Folio CIMA-FX029: ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,BART MNLI,PAQUETE,0.35719120502471924,0.02638689425003804
+CIMA-132,¿Se recibió la transferencia? Solo tengo el movimiento bancario.,AMBIGUA,BART MNLI,AMBIGUA,0.33641156554222107,0.02638689425003804
+CIMA-133,"Tengo varios datos incompletos del abono, ¿pueden buscarlo?",AMBIGUA,BART MNLI,AMBIGUA,0.4476642608642578,0.02638689425003804
+CIMA-134,"Necesito consultar los movimientos del folio CIMA-F0033, gracias.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5335000157356262,0.02638689425003804
+CIMA-135,¿Qué pagos aparecen asignados al folio CIMA-F0002?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5380390882492065,0.025393618999999035
+CIMA-136,"Necesito consultar los movimientos del folio CIMA-F0023, gracias.",INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5282115340232849,0.025393618999999035
+CIMA-137,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-005.,PAQUETE,BART MNLI,PAQUETE,0.43964579701423645,0.025393618999999035
+CIMA-138,Quiero conocer requisitos de crédito hipotecario BBVA.,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.5760178565979004,0.025393618999999035
+CIMA-139,¿Qué significa esta referencia CIE? No sé a qué folio corresponde.,AMBIGUA,BART MNLI,AMBIGUA,0.3753221035003662,0.024949691750009606
+CIMA-140,Validar los pagos parciales repartidos entre 10 folios en PK-SIM-029.,PAQUETE,BART MNLI,PAQUETE,0.4468004107475281,0.024949691750009606
+CIMA-141,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,BART MNLI,AMBIGUA,0.6078819036483765,0.024949691750009606
+CIMA-142,Buenas tardes. Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.3750578463077545,0.024949691750009606
+CIMA-143,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,BART MNLI,AMBIGUA,0.6078819036483765,0.025299711749994458
+CIMA-144,Favor de atender: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.40177351236343384,0.025299711749994458
+CIMA-145,¿Se asignó la transferencia única a los 20 inmuebles de PK-SIM-019?,PAQUETE,BART MNLI,PAQUETE,0.3842708170413971,0.025299711749994458
+CIMA-146,¿Me ayudas con el folio CIMA-F0036? No sé si es anticipo o finiquito.,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.7895395159721375,0.025299711749994458
+CIMA-147,"El anticipo es común, pero cada uno de los 8 folios tiene finiquito individual: revisar PK-SIM-004.",PAQUETE,BART MNLI,PAQUETE,0.4739696979522705,0.028387817999998788
+CIMA-148,Buenas tardes. Necesito información de depósitos en garantía y su devolución.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.3125183582305908,0.028387817999998788
+CIMA-149,"El correo menciona un depósito sin folio ni relación adjunta, revisarlo.",AMBIGUA,BART MNLI,AMBIGUA,0.6078819036483765,0.028387817999998788
+CIMA-150,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-010.",PAQUETE,BART MNLI,PAQUETE,0.5382251739501953,0.028387817999998788
+CIMA-151,"Envío Excel con la distribución de finiquito entre 110 folios, paquete PK-SIM-034.",PAQUETE,BART MNLI,PAQUETE,0.5463318228721619,0.027236178250007015
+CIMA-152,"Aparece VALIDACIÓN Pendiente y el movimiento está Por Asignar, ¿puedes confirmarlo?",AMBIGUA,BART MNLI,INDIVIDUAL,0.3244970440864563,0.027236178250007015
+CIMA-154,Folio CIMA-FX024: ¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,BART MNLI,INDIVIDUAL,0.29320207238197327,0.027236178250007015
+CIMA-155,¿Cuándo procede la devolución de pagos al cliente?,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.39175957441329956,0.027236178250007015
+CIMA-156,Consulta las penalidades aplicadas por cancelación de oferta.,FUERA_ALCANCE,BART MNLI,FUERA_ALCANCE,0.3747027516365051,0.03238562625000441
+CIMA-158,¿Cuál es la información disponible del folio CIMA-F0009?,INDIVIDUAL,BART MNLI,INDIVIDUAL,0.5151474475860596,0.03238562625000441
+CIMA-159,Buenas tardes. ¿Puedes emitir el CFDI de la operación?,FUERA_ALCANCE,BART MNLI,AMBIGUA,0.2937001585960388,0.03238562625000441
+CIMA-160,Validar los pagos parciales repartidos entre 75 folios en PK-SIM-021.,PAQUETE,BART MNLI,PAQUETE,0.44813522696495056,0.03238562625000441
