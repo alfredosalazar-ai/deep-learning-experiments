@@ -1,4 +1,6 @@
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/cima-nlp-huggingface/notebooks/CIMA_Comparacion_HuggingFace_Colab.ipynb)
+
 # CHATBOT CIMA — Comparación de modelos NLP
 
 ## Actividad 4 | Gestión de Proyectos de Inteligencia Artificial
