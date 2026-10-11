@@ -1,6 +1,4 @@
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-
 """
 CHATBOT CIMA - Actividad 4
 Validacion del dataset sintetico basado en la estructura CIE.
