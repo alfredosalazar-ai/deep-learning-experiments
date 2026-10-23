@@ -1,0 +1,49 @@
+{
+  "version_dataset": "a5-v1.0",
+  "semilla": 20261015,
+  "fuente": "Dataset sintetico CIMA publicado en Actividad 4; no es la base operativa CIE",
+  "registros_originales": 160,
+  "registros_limpios": 128,
+  "duplicados_exactos_normalizados_retirados": 32,
+  "textos_compartidos_particion_anterior": 6,
+  "etiquetas_contradictorias": 0,
+  "conteo_original_por_clase": {
+    "INDIVIDUAL": 40,
+    "PAQUETE": 40,
+    "AMBIGUA": 40,
+    "FUERA_ALCANCE": 40
+  },
+  "conteo_limpio_por_clase": {
+    "INDIVIDUAL": 40,
+    "PAQUETE": 38,
+    "AMBIGUA": 10,
+    "FUERA_ALCANCE": 40
+  },
+  "particion": {
+    "INDIVIDUAL": {
+      "entrenamiento": 32,
+      "prueba": 8
+    },
+    "PAQUETE": {
+      "entrenamiento": 30,
+      "prueba": 8
+    },
+    "AMBIGUA": {
+      "entrenamiento": 8,
+      "prueba": 2
+    },
+    "FUERA_ALCANCE": {
+      "entrenamiento": 32,
+      "prueba": 8
+    }
+  },
+  "regla_limpieza": "Unicode NFKC, espacios, deduplicacion de texto tras casefold; sin stem, lemmatizacion ni quitar acentos",
+  "particion_original_a4_no_reutilizada": true,
+  "original_sha256": "d9949a464ff67d28efca2a8c0e3e18a75c830b28e3b57376a114d48fdba43d05",
+  "limpio_sha256": "0ee6d271d9d35d7c30fb82f0dcf4f4cbdebe3e4b0b726c87ec8e44d22e2a54e6",
+  "limitaciones": [
+    "Sintetico: no representa distribucion de produccion",
+    "Solo 10 formulaciones unicas AMBIGUA antes de particionar",
+    "Dividir por texto evita fuga exacta pero no garantiza independencia semantica de plantillas"
+  ]
+}
