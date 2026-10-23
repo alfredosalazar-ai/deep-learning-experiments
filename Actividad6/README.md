@@ -70,5 +70,3 @@ python fuentes/evaluacion.py
 - `resultados/metadatos_actividad6.json`
 - `resultados/graficas/`: matrices, curvas ROC y comparación de CV
 - `resultados/reportes/`: reportes de clasificación JSON
-
-Las salidas deben generarse ejecutando el notebook/script. No se rellenan métricas manualmente. Después de la ejecución se incorporarán a GitHub junto con el reporte y las evidencias de Trello.
