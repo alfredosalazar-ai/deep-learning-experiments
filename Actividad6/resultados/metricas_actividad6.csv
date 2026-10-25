@@ -1,0 +1,6 @@
+﻿modelo,tipo,accuracy,precision_macro,recall_macro,f1_macro,roc_auc_individual_vs_resto,threshold,binary_accuracy,binary_precision_individual,binary_recall_individual,false_eligibility_count,false_eligibility_rate,non_individual_route_count,true_individual_routed,roc_auc_ovr_macro_promedio_por_clase,score_operativo,manual_review_count
+DummyClassifier_most_frequent,baseline_prueba,0.3076923076923077,0.07692307692307693,0.25,0.11764705882352941,,,0.6923076923076923,0.0,0.0,0,0.0,26,0,,,
+Regresion_Logistica,clasificacion_multiclase_prueba,1.0,1.0,1.0,1.0,1.0,0.27633420515676493,1.0,1.0,1.0,0,0.0,18,8,1.0,probabilidad estimada,
+Regresion_Logistica,politica_umbral_prueba,,,,,1.0,0.27633420515676493,1.0,1.0,1.0,0,0.0,18,8,,probabilidad estimada,18.0
+LinearSVC,clasificacion_multiclase_prueba,0.9615384615384616,0.9722222222222222,0.875,0.9019607843137255,1.0,0.9498384040829645,0.9615384615384616,0.8888888888888888,1.0,1,0.05555555555555555,17,8,1.0,margen de decisión (no es probabilidad),
+LinearSVC,politica_umbral_prueba,,,,,1.0,0.9498384040829645,1.0,1.0,1.0,0,0.0,18,8,,margen de decisión (no es probabilidad),18.0

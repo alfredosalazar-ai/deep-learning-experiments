@@ -1,0 +1,3 @@
+﻿politica,n_casos,binary_accuracy,binary_precision_individual,binary_recall_individual,false_eligibility_count,false_eligibility_rate,non_individual_route_count,true_individual_routed,manual_review_count,accuracy_multiclase,nota
+A_revision_manual_todos,26,0.6923076923076923,0.0,0.0,0,0.0,26,0,26,,Simulación offline pareada sobre la misma prueba sintética; no es A/B real con usuarios ni asignación aleatoria.
+B_regresion_logistica_con_umbral,26,1.0,1.0,1.0,0,0.0,18,8,18,,Simulación offline pareada sobre la misma prueba sintética; no es A/B real con usuarios ni asignación aleatoria.

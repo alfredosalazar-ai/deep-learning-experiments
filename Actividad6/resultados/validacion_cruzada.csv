@@ -1,0 +1,13 @@
+﻿modelo,fold,f1_macro,accuracy,hiperparametros
+DummyClassifier_most_frequent,1,0.11764705882352941,0.3076923076923077,
+DummyClassifier_most_frequent,2,0.11764705882352941,0.3076923076923077,
+DummyClassifier_most_frequent,3,0.12121212121212122,0.32,
+DummyClassifier_most_frequent,4,0.12121212121212122,0.32,
+Regresion_Logistica,1,1.0,1.0,Congelados desde Actividad 5; sin nueva búsqueda
+Regresion_Logistica,2,0.8705882352941177,0.9230769230769231,Congelados desde Actividad 5; sin nueva búsqueda
+Regresion_Logistica,3,0.9019607843137254,0.96,Congelados desde Actividad 5; sin nueva búsqueda
+Regresion_Logistica,4,0.9019607843137255,0.96,Congelados desde Actividad 5; sin nueva búsqueda
+LinearSVC,1,0.9019607843137254,0.9615384615384616,Congelados desde Actividad 5; sin nueva búsqueda
+LinearSVC,2,0.6909722222222222,0.8846153846153846,Congelados desde Actividad 5; sin nueva búsqueda
+LinearSVC,3,0.9019607843137255,0.96,Congelados desde Actividad 5; sin nueva búsqueda
+LinearSVC,4,0.9019607843137255,0.96,Congelados desde Actividad 5; sin nueva búsqueda

@@ -1,0 +1,3 @@
+﻿modelo,threshold_oof,tipo_score,oof_true_positives,oof_false_eligibilities,oof_threshold_recall,rule,casos_prueba_enrutados_individual,revision_manual_prueba,prueba_binary_accuracy,prueba_binary_precision_individual,prueba_binary_recall_individual,prueba_false_eligibility_count,prueba_false_eligibility_rate,prueba_non_individual_route_count,prueba_true_individual_routed
+Regresion_Logistica,0.27633420515676493,probabilidad estimada,32,0,1.0,maximizar TP sujeto a cero falsas elegibilidades OOF; empate: umbral mayor,8,18,1.0,1.0,1.0,0,0.0,18,8
+LinearSVC,0.9498384040829645,margen de decisión (no es probabilidad),32,0,1.0,maximizar TP sujeto a cero falsas elegibilidades OOF; empate: umbral mayor,8,18,1.0,1.0,1.0,0,0.0,18,8

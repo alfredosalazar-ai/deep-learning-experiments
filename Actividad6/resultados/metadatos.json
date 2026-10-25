@@ -1,0 +1,8 @@
+{
+  "seed": 20261015,
+  "dataset_sha256": "0ee6d271d9d35d7c30fb82f0dcf4f4cbdebe3e4b0b726c87ec8e44d22e2a54e6",
+  "mlflow_tracking_uri": "sqlite:////content/Actividad5/mlflow.db",
+  "n_train": 102,
+  "n_test": 26,
+  "notas": "AUC OvR sobre puntajes, no probabilidades calibradas para LinearSVC. Holdout sintetico de solo 26 registros."
+}

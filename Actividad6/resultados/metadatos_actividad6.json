@@ -1,0 +1,12 @@
+{
+  "actividad": "Actividad 6 - evaluación y validación CIMA",
+  "dataset_version": "a5-v1.0",
+  "train_n": 102,
+  "test_n": 26,
+  "seed": 20261015,
+  "threshold_method": "StratifiedKFold 4-fold OOF predictions from fixed Activity 5 model configurations; maximize true positives with zero false eligibility in OOF.",
+  "test_used_for_threshold_selection": false,
+  "cv_hyperparameters": "Frozen from Activity 5; CV evaluates these fixed configurations and does not perform a new search.",
+  "ab_test_type": "offline paired policy simulation, not live randomized A/B test",
+  "warning": "Test is synthetic and small; only two AMBIGUA test samples in A5 split; no production inference."
+}

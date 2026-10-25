@@ -1,0 +1,5 @@
+﻿comparacion,solo_A_correcto,solo_B_correcto,pares_discordantes,p_valor_mcnemar_exacto,interpretacion
+Regresion_Logistica_multiclase vs LinearSVC_multiclase,1,0,1,1.0,"No se detectó diferencia estadísticamente significativa; esto no demuestra equivalencia, especialmente con n pequeño."
+Regresion_Logistica_multiclase vs DummyClassifier_multiclase,18,0,18,7.62939453125e-06,Diferencia estadística detectada con esta muestra; interpretar con cautela por n pequeño y datos sintéticos.
+Politica_A_revision_manual_todos vs Politica_B_LR_umbral_revision,0,8,8,0.0078125,Diferencia estadística detectada con esta muestra; interpretar con cautela por n pequeño y datos sintéticos.
+Politica_LR vs Politica_baseline_binaria,8,0,8,0.0078125,Diferencia estadística detectada con esta muestra; interpretar con cautela por n pequeño y datos sintéticos.
