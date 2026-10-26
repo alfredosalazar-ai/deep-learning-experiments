@@ -1,3 +1,4 @@
-# Evidencias de la Actividad 6
+# Evidencias de Trello - Actividad 6
 
-Tablero Trello y visualizaciones finales.
+- `enlace_tablero.txt`: enlace directo al tablero y enlace de invitacion.
+- `capturas.pdf`: captura general del tablero con sus cinco listas.
