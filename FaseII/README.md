@@ -15,6 +15,19 @@ Prototipo académico para clasificar consultas operativas sintéticas mediante p
 - **Integración continua:** workflow `.github/workflows/fase2-docker.yml`, ubicado en la raíz del repositorio (fuera de `FaseII/`). Ejecuta pruebas automatizadas, construye la imagen Docker y valida el contenedor mediante solicitudes HTTP.
 - **Despliegue:** Render Web Service con runtime Docker.
 
+## Entorno de ejecución y decisión de despliegue
+
+La ejecución de esta fase se realizó deliberadamente en infraestructura de nube. La decisión respondió a las limitaciones de disponibilidad y uso del equipo de cómputo laboral y a que no se contó con acceso a un equipo personal para preparar y ejecutar un entorno Docker local. Por este motivo, **no se realizó una ejecución local del contenedor** y no se presenta el despliegue remoto como si fuera una validación local.
+
+Para mantener la reproducibilidad y validar el contenedor sin depender de una instalación local de Docker, se adoptó el siguiente flujo:
+
+1. **GitHub** aloja el código fuente, el `Dockerfile`, las dependencias, las pruebas y el workflow.
+2. **GitHub Actions**, mediante un runner alojado por GitHub, instala las dependencias de prueba, ejecuta `pytest`, construye la imagen Docker y prueba el contenedor mediante solicitudes HTTP.
+3. **Render** construye y ejecuta la aplicación desde el repositorio y publica la interfaz y la API.
+4. La validación funcional se realiza desde la URL pública y desde Swagger (`/docs`), con consultas sintéticas y comprobaciones de `/health`.
+
+Esta estrategia permitió comprobar la construcción de la imagen, el arranque del servicio, la carga del modelo y la comunicación entre frontend y backend en entornos alojados. **La limitación respecto de la rúbrica es que estas comprobaciones se realizaron en la nube y no acreditan una ejecución local**, requisito que se deja explícitamente identificado. La decisión priorizó un entorno disponible, reproducible y con evidencia verificable, sin afirmar una actividad que no se realizó.
+
 ## Endpoints
 
 | Método | Ruta | Propósito |
@@ -167,6 +180,3 @@ El workflow se encuentra fuera de esta carpeta:
 - `evidencias/capturas.pdf`: capturas de la interfaz, las ocho pruebas de API y las evidencias de CI/CD/despliegue.
 - `evidencias/enlace_despliegue.txt`: URL de la aplicación y endpoints de comprobación.
 - `evidencias/README.md`: índice de los archivos de evidencia.
-
-- `requirements.txt`: dependencias fijadas.
-- `Dockerfile`: construcción de la imagen.
