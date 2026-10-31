@@ -54,13 +54,23 @@ def home() -> FileResponse:
 
 @app.get("/health", tags=["operación"])
 def health() -> dict[str, object]:
-    """Health check para CI y el proveedor de nube."""
+    """Comprueba que la API y el modelo estén disponibles."""
+
+    if classifier is None:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "status": "degraded",
+                "model_loaded": False,
+                "service": "cima-api",
+            },
+        )
+
     return {
-        "status": "ok" if classifier is not None else "degraded",
-        "model_loaded": classifier is not None,
+        "status": "ok",
+        "model_loaded": True,
         "service": "cima-api",
     }
-
 
 @app.post("/predict", response_model=PredictionResponse, tags=["clasificación"])
 def predict(request: PredictionRequest) -> PredictionResponse:
