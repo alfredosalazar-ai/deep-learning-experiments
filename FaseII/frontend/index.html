@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prototipo académico de clasificación de consultas CHATBOT CIMA">
+  <title>CHATBOT CIMA | Clasificación de consultas</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="layout">
+    <header class="hero">
+      <p class="eyebrow">PROTOTIPO ACADÉMICO · FASE II</p>
+      <h1>CHATBOT CIMA</h1>
+      <p>Evaluación de consultas operativas mediante procesamiento de lenguaje natural.</p>
+      <span class="status" id="healthBadge">Verificando API…</span>
+    </header>
+
+    <section class="panel" aria-labelledby="formTitle">
+      <h2 id="formTitle">Clasificar una consulta</h2>
+      <p class="hint">Utiliza texto sintético. No introduzcas datos bancarios reales, información personal ni credenciales.</p>
+      <form id="predictionForm">
+        <label for="texto">Texto de consulta</label>
+        <textarea id="texto" name="texto" rows="5" maxlength="5000" required placeholder="Ejemplo: Solicito confirmar el pago asociado al folio 12345."></textarea>
+        <div class="form-footer">
+          <small id="charCount">0 / 5000</small>
+          <button id="submitButton" type="submit">Evaluar consulta</button>
+        </div>
+      </form>
+      <div id="errorBox" class="message error" role="alert" hidden></div>
+    </section>
+
+    <section id="resultPanel" class="panel result" aria-live="polite" hidden>
+      <h2>Resultado</h2>
+      <dl>
+        <div><dt>Clase predicha</dt><dd id="predictedClass">—</dd></div>
+        <div><dt>Decisión de enrutamiento</dt><dd id="operationalDecision">—</dd></div>
+        <div><dt>Puntaje INDIVIDUAL</dt><dd id="individualScore">—</dd></div>
+        <div><dt>Umbral aplicado</dt><dd id="threshold">—</dd></div>
+        <div><dt>Revisión humana</dt><dd id="humanReview">—</dd></div>
+      </dl>
+      <p class="warning" id="warningText"></p>
+    </section>
+
+    <footer>
+      <p>El resultado es informativo. No confirma transacciones, no autoriza pagos y no sustituye las validaciones deterministas ni la revisión humana.</p>
+      <a href="/docs" target="_blank" rel="noopener">Documentación interactiva de la API</a>
+    </footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
