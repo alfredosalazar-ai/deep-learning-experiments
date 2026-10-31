@@ -1,0 +1,5 @@
+CHATBOT CIMA — Aplicación desplegada (Fase II)
+https://chatbot-cima-fase2.onrender.com/
+
+Swagger UI: https://chatbot-cima-fase2.onrender.com/docs
+Health Check: https://chatbot-cima-fase2.onrender.com/health
