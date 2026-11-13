@@ -1,0 +1,205 @@
+{
+  "origen": "SIMULACIONES_OFFLINE",
+  "experimento": "CIMA_Actividad8_Observabilidad_Simulada",
+  "total_runs": 5,
+  "runs": [
+    {
+      "run_id": "3ab5126e8fec458694d7ee5499952e7a",
+      "nombre": "ALERTAS_SLO_y_runbooks",
+      "tipo": "ALERTAS",
+      "estado": "FINISHED",
+      "metricas": {
+        "primera_emision": 1.0,
+        "runbooks_registrados": 3.0,
+        "runbooks_recuperacion_verificada": 3.0,
+        "segunda_emision_2min": 0.0,
+        "alertas_generadas": 5.0,
+        "emision_31min": 1.0,
+        "alertas_suprimidas_estado_reutilizado": 5.0,
+        "suprimidas_2min": 1.0,
+        "cooldown_minutos": 30.0,
+        "alertas_emitidas_estado_reutilizado": 0.0
+      },
+      "parametros": {},
+      "tags": {
+        "workflow_run_declarado": "4",
+        "antirruido": "30_minutos",
+        "mlflow.source.git.repoURL": "https://github.com/alfredosalazar-ai/deep-learning-experiments.git",
+        "origen": "SIMULACION_OFFLINE",
+        "mlflow.source.git.commit": "8ca43f387f25f186fc8d148f79a25d7a05e76d59",
+        "fuente": "GITHUB_ACTIONS_ARTIFACTO_DESCARGADO",
+        "mlflow.source.name": "/content/deep-learning-experiments/Actividad8/src/mlflow_registro.py",
+        "tipo_run": "ALERTAS",
+        "mlflow.source.git.branch": "main",
+        "entorno": "GOOGLE_COLAB",
+        "mlflow.source.type": "LOCAL",
+        "sha256_artefacto": "5d1ec618bd904b39443dc1e623644b9fea15fc0acf88c23fec75bd878c59f19e",
+        "mlflow.user": "root",
+        "modifica_render": "NO",
+        "commit_declarado": "c0d6991",
+        "mlflow.runName": "ALERTAS_SLO_y_runbooks"
+      },
+      "artefactos": [
+        "dashboards",
+        "incidentes"
+      ]
+    },
+    {
+      "run_id": "584defab2f39427f9a9ae52f461b37b0",
+      "nombre": "CALIDAD_predicciones_ficticias",
+      "tipo": "CALIDAD_FICTICIA",
+      "estado": "FINISHED",
+      "metricas": {
+        "precision_macro": 0.8611,
+        "alertas_calidad": 2.0,
+        "recall_macro": 0.6875,
+        "f1_macro": 0.6968,
+        "falsas_elegibilidades_predichas": 10.0,
+        "accuracy": 0.6875,
+        "n_etiquetados_ficticios": 32.0
+      },
+      "parametros": {},
+      "tags": {
+        "workflow_run_declarado": "4",
+        "sin_etiquetas_reales": "SI",
+        "mlflow.source.git.repoURL": "https://github.com/alfredosalazar-ai/deep-learning-experiments.git",
+        "origen": "SIMULACION_OFFLINE",
+        "mlflow.source.git.commit": "8ca43f387f25f186fc8d148f79a25d7a05e76d59",
+        "fuente": "GITHUB_ACTIONS_ARTIFACTO_DESCARGADO",
+        "mlflow.source.name": "/content/deep-learning-experiments/Actividad8/src/mlflow_registro.py",
+        "tipo_run": "CALIDAD_FICTICIA",
+        "mlflow.source.git.branch": "main",
+        "entorno": "GOOGLE_COLAB",
+        "mlflow.source.type": "LOCAL",
+        "sha256_artefacto": "5d1ec618bd904b39443dc1e623644b9fea15fc0acf88c23fec75bd878c59f19e",
+        "mlflow.user": "root",
+        "modifica_render": "NO",
+        "commit_declarado": "c0d6991",
+        "mlflow.runName": "CALIDAD_predicciones_ficticias"
+      },
+      "artefactos": [
+        "fuente",
+        "graficos"
+      ]
+    },
+    {
+      "run_id": "fbc61201b4d34c439443eb7629a89f96",
+      "nombre": "INC-03_incidente_offline",
+      "tipo": "INCIDENTE",
+      "estado": "FINISHED",
+      "metricas": {
+        "error_5xx_rate": 0.0,
+        "recuperacion_simulada": 1.0,
+        "disponibilidad": 1.0,
+        "alertas_activas": 0.0
+      },
+      "parametros": {
+        "escenario": "Fallas HTTP 503 artificiales",
+        "n_ventana": "100"
+      },
+      "tags": {
+        "workflow_run_declarado": "4",
+        "incidente": "INC-03",
+        "mlflow.source.git.repoURL": "https://github.com/alfredosalazar-ai/deep-learning-experiments.git",
+        "origen": "SIMULACION_OFFLINE",
+        "mlflow.source.git.commit": "8ca43f387f25f186fc8d148f79a25d7a05e76d59",
+        "fuente": "GITHUB_ACTIONS_ARTIFACTO_DESCARGADO",
+        "mlflow.source.name": "/content/deep-learning-experiments/Actividad8/src/mlflow_registro.py",
+        "runbook": "RB-01",
+        "tipo_run": "INCIDENTE",
+        "mlflow.source.git.branch": "main",
+        "entorno": "GOOGLE_COLAB",
+        "mlflow.source.type": "LOCAL",
+        "sha256_artefacto": "5d1ec618bd904b39443dc1e623644b9fea15fc0acf88c23fec75bd878c59f19e",
+        "mlflow.user": "root",
+        "modifica_render": "NO",
+        "commit_declarado": "c0d6991",
+        "mlflow.runName": "INC-03_incidente_offline"
+      },
+      "artefactos": [
+        "fuente",
+        "graficos"
+      ]
+    },
+    {
+      "run_id": "0e7e886b90164f9ba59a884b40410411",
+      "nombre": "INC-02_incidente_offline",
+      "tipo": "INCIDENTE",
+      "estado": "FINISHED",
+      "metricas": {
+        "error_5xx_rate": 0.0,
+        "recuperacion_simulada": 1.0,
+        "drift_psi": 0.0,
+        "disponibilidad": 1.0,
+        "alertas_activas": 0.0
+      },
+      "parametros": {
+        "escenario": "Drift sintetico de clases",
+        "n_ventana": "50"
+      },
+      "tags": {
+        "workflow_run_declarado": "4",
+        "incidente": "INC-02",
+        "mlflow.source.git.repoURL": "https://github.com/alfredosalazar-ai/deep-learning-experiments.git",
+        "origen": "SIMULACION_OFFLINE",
+        "mlflow.source.git.commit": "8ca43f387f25f186fc8d148f79a25d7a05e76d59",
+        "fuente": "GITHUB_ACTIONS_ARTIFACTO_DESCARGADO",
+        "mlflow.source.name": "/content/deep-learning-experiments/Actividad8/src/mlflow_registro.py",
+        "runbook": "RB-03",
+        "tipo_run": "INCIDENTE",
+        "mlflow.source.git.branch": "main",
+        "entorno": "GOOGLE_COLAB",
+        "mlflow.source.type": "LOCAL",
+        "sha256_artefacto": "5d1ec618bd904b39443dc1e623644b9fea15fc0acf88c23fec75bd878c59f19e",
+        "mlflow.user": "root",
+        "modifica_render": "NO",
+        "commit_declarado": "c0d6991",
+        "mlflow.runName": "INC-02_incidente_offline"
+      },
+      "artefactos": [
+        "fuente",
+        "graficos"
+      ]
+    },
+    {
+      "run_id": "ee1ac965167e460aa2c4aa0853f3f8eb",
+      "nombre": "INC-01_incidente_offline",
+      "tipo": "INCIDENTE",
+      "estado": "FINISHED",
+      "metricas": {
+        "error_5xx_rate": 0.0,
+        "recuperacion_simulada": 1.0,
+        "latencia_p95_ms": 520.0,
+        "disponibilidad": 1.0,
+        "alertas_activas": 0.0
+      },
+      "parametros": {
+        "escenario": "Latencia artificial",
+        "n_ventana": "50"
+      },
+      "tags": {
+        "workflow_run_declarado": "4",
+        "incidente": "INC-01",
+        "mlflow.source.git.repoURL": "https://github.com/alfredosalazar-ai/deep-learning-experiments.git",
+        "origen": "SIMULACION_OFFLINE",
+        "mlflow.source.git.commit": "8ca43f387f25f186fc8d148f79a25d7a05e76d59",
+        "fuente": "GITHUB_ACTIONS_ARTIFACTO_DESCARGADO",
+        "mlflow.source.name": "/content/deep-learning-experiments/Actividad8/src/mlflow_registro.py",
+        "runbook": "RB-02",
+        "tipo_run": "INCIDENTE",
+        "mlflow.source.git.branch": "main",
+        "entorno": "GOOGLE_COLAB",
+        "mlflow.source.type": "LOCAL",
+        "sha256_artefacto": "5d1ec618bd904b39443dc1e623644b9fea15fc0acf88c23fec75bd878c59f19e",
+        "mlflow.user": "root",
+        "modifica_render": "NO",
+        "commit_declarado": "c0d6991",
+        "mlflow.runName": "INC-01_incidente_offline"
+      },
+      "artefactos": [
+        "fuente",
+        "graficos"
+      ]
+    }
+  ]
+}
