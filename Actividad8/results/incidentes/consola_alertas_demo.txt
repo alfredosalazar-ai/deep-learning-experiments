@@ -1,0 +1,39 @@
+==================================================================
+CHATBOT CIMA | ACTIVIDAD 8 | MONITOREO Y RESPUESTA
+EVIDENCIA 100% SIMULADA - SIN TRAFICO A RENDER
+==================================================================
+
+=== INC-01 - Latencia artificial ===
+Runbook: RB-02
+ESTADO: NORMAL -> ALERTA -> RECUPERACION
+[ALERTA P2] Latencia P95 (ms) | observado=7200.0000 | umbral=3000.0000 | estado=ALERTA
+[ACCION AUTOMATICA LAB] Reduccion de carga sintetica (variable local)
+[RECUPERACION] verificaciones=3/3 | alertas_finales=0 | estado=OK
+
+=== INC-02 - Drift sintetico de clases ===
+Runbook: RB-03
+ESTADO: NORMAL -> ALERTA -> RECUPERACION
+[ALERTA P1] PSI distribución | observado=2.8689 | umbral=0.2500 | estado=ALERTA
+[ACCION AUTOMATICA LAB] Bloqueo de aceptacion solo en laboratorio
+[RECUPERACION] verificaciones=3/3 | alertas_finales=0 | estado=OK
+
+=== INC-03 - Fallas HTTP 503 artificiales ===
+Runbook: RB-01
+ESTADO: NORMAL -> ALERTA -> RECUPERACION
+[ALERTA P1] Disponibilidad | observado=0.8000 | umbral=0.9900 | estado=ALERTA
+[ALERTA P1] Tasa HTTP 5xx | observado=0.2000 | umbral=0.0100 | estado=ALERTA
+[ACCION AUTOMATICA LAB] Contingencia simulada con maximo 2 reintentos
+[RECUPERACION] verificaciones=3/3 | alertas_finales=0 | estado=OK
+
+=== CONTROL ANTIRRUIDO (30 MIN) ===
+[PRIMER AVISO] emitidas=1
+[MISMA ALERTA A LOS 2 MIN] emitidas=0 | suprimidas=1
+[DESPUES DE 31 MIN] emitidas=1
+
+=== CALIDAD PREDICTIVA | ETIQUETAS FICTICIAS ===
+accuracy | base=0.8750 | actual=0.6875 | delta=-18.75 pp
+f1_macro | base=0.8809 | actual=0.6968 | delta=-18.41 pp
+[ALERTA P1] CALIDAD_ACCURACY | actual=0.6875 < umbral=0.8000
+[ALERTA P1] CALIDAD_F1_MACRO | actual=0.6968 < umbral=0.8000
+
+CONCLUSION: escenario simulado; no acredita calidad ni monitoreo continuo del CIMA desplegado.

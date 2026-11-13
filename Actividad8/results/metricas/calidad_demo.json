@@ -1,0 +1,105 @@
+{
+  "origen": "SIMULACION_OFFLINE",
+  "fecha_utc": "2026-11-13T04:02:51+00:00",
+  "descripcion": "Predicciones y etiquetas completamente ficticias: no son resultados del modelo desplegado",
+  "linea_base_simulada": {
+    "n_etiquetados": 32,
+    "accuracy": 0.875,
+    "precision_macro": 0.9167,
+    "recall_macro": 0.875,
+    "f1_macro": 0.8809,
+    "falsas_elegibilidades_predichas": 4,
+    "casos_no_individuales": 24,
+    "nota_riesgo": "La prediccion INDIVIDUAL no implica aceptacion automatica; faltan puntaje y regla de umbral.",
+    "por_clase": {
+      "INDIVIDUAL": {
+        "soporte": 8,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "aciertos": 8
+      },
+      "PAQUETE": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "aciertos": 6
+      },
+      "AMBIGUA": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333,
+        "aciertos": 7
+      },
+      "FUERA_ALCANCE": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333,
+        "aciertos": 7
+      }
+    }
+  },
+  "degradado_simulado": {
+    "n_etiquetados": 32,
+    "accuracy": 0.6875,
+    "precision_macro": 0.8611,
+    "recall_macro": 0.6875,
+    "f1_macro": 0.6968,
+    "falsas_elegibilidades_predichas": 10,
+    "casos_no_individuales": 24,
+    "nota_riesgo": "La prediccion INDIVIDUAL no implica aceptacion automatica; faltan puntaje y regla de umbral.",
+    "por_clase": {
+      "INDIVIDUAL": {
+        "soporte": 8,
+        "precision": 0.4444,
+        "recall": 1.0,
+        "f1": 0.6154,
+        "aciertos": 8
+      },
+      "PAQUETE": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.7692,
+        "aciertos": 5
+      },
+      "AMBIGUA": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "aciertos": 6
+      },
+      "FUERA_ALCANCE": {
+        "soporte": 8,
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.5455,
+        "aciertos": 3
+      }
+    }
+  },
+  "alertas": [
+    {
+      "codigo": "CALIDAD_ACCURACY",
+      "severidad": "P1",
+      "observado": 0.6875,
+      "referencia": 0.875,
+      "umbral": 0.8,
+      "variacion_puntos_porcentuales": -18.75,
+      "accion": "Verificar etiquetas, drift y revisión humana; no publicar modelo automáticamente"
+    },
+    {
+      "codigo": "CALIDAD_F1_MACRO",
+      "severidad": "P1",
+      "observado": 0.6968,
+      "referencia": 0.8809,
+      "umbral": 0.8,
+      "variacion_puntos_porcentuales": -18.41,
+      "accion": "Verificar etiquetas, drift y revisión humana; no publicar modelo automáticamente"
+    }
+  ]
+}

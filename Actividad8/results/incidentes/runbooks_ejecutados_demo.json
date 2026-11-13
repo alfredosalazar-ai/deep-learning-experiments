@@ -1,0 +1,287 @@
+{
+  "origen": "SIMULACION_OFFLINE",
+  "fecha_utc": "2026-11-13T04:02:50+00:00",
+  "nota": "Datos y acciones simulados; sin escritura externa. MLflow NO integrado.",
+  "incidentes": [
+    {
+      "incidente": "INC-01",
+      "runbook": "RB-02",
+      "tipo": "SIMULACION_OFFLINE",
+      "descripcion": "Latencia artificial",
+      "impacto": "Degradacion operativa simulada",
+      "severidad": "P1",
+      "alertas": [
+        "LATENCIA_P95"
+      ],
+      "accion_aplicada": "Reduccion de carga sintetica (variable local)",
+      "estado_durante": {
+        "modo": "DIAGNOSTICO_LATENCIA",
+        "max_reintentos": 0,
+        "aceptacion_automatica_demo": true,
+        "carga_sintetica_reducida": true
+      },
+      "verificaciones": [
+        {
+          "paso": "Confirmar anomalia",
+          "resultado": true
+        },
+        {
+          "paso": "Aplicar accion en estado aislado",
+          "resultado": true
+        },
+        {
+          "paso": "Verificar retorno a umbrales",
+          "resultado": true
+        }
+      ],
+      "metricas_antes": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 450,
+        "n_latencia": 30
+      },
+      "metricas_durante": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 7200,
+        "n_latencia": 30
+      },
+      "metricas_despues": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 520,
+        "n_latencia": 30
+      },
+      "estado_final": {
+        "modo": "OPERACION_NORMAL",
+        "aceptacion_automatica_demo": true,
+        "max_reintentos": 0
+      },
+      "recuperacion_verificada": true
+    },
+    {
+      "incidente": "INC-02",
+      "runbook": "RB-03",
+      "tipo": "SIMULACION_OFFLINE",
+      "descripcion": "Drift sintetico de clases",
+      "impacto": "Degradacion operativa simulada",
+      "severidad": "P1",
+      "alertas": [
+        "DRIFT_CRITICO"
+      ],
+      "accion_aplicada": "Bloqueo de aceptacion solo en laboratorio",
+      "estado_durante": {
+        "modo": "REVISION_HUMANA",
+        "max_reintentos": 0,
+        "aceptacion_automatica_demo": false
+      },
+      "verificaciones": [
+        {
+          "paso": "Confirmar anomalia",
+          "resultado": true
+        },
+        {
+          "paso": "Aplicar accion en estado aislado",
+          "resultado": true
+        },
+        {
+          "paso": "Verificar retorno a umbrales",
+          "resultado": true
+        }
+      ],
+      "metricas_antes": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 0.0
+      },
+      "metricas_durante": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 2.8688661210628035
+      },
+      "metricas_despues": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 0.0
+      },
+      "estado_final": {
+        "modo": "OPERACION_NORMAL",
+        "aceptacion_automatica_demo": true,
+        "max_reintentos": 0
+      },
+      "recuperacion_verificada": true
+    },
+    {
+      "incidente": "INC-03",
+      "runbook": "RB-01",
+      "tipo": "SIMULACION_OFFLINE",
+      "descripcion": "Fallas HTTP 503 artificiales",
+      "impacto": "Degradacion operativa simulada",
+      "severidad": "P1",
+      "alertas": [
+        "SLO_DISPONIBILIDAD",
+        "ERRORES_5XX"
+      ],
+      "accion_aplicada": "Contingencia simulada con maximo 2 reintentos",
+      "estado_durante": {
+        "modo": "CONTINGENCIA",
+        "max_reintentos": 2,
+        "aceptacion_automatica_demo": true
+      },
+      "verificaciones": [
+        {
+          "paso": "Confirmar anomalia",
+          "resultado": true
+        },
+        {
+          "paso": "Aplicar accion en estado aislado",
+          "resultado": true
+        },
+        {
+          "paso": "Verificar retorno a umbrales",
+          "resultado": true
+        }
+      ],
+      "metricas_antes": {
+        "n_ventana": 100,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0.0
+      },
+      "metricas_durante": {
+        "n_ventana": 100,
+        "disponibilidad": 0.8,
+        "error_5xx_rate": 0.2
+      },
+      "metricas_despues": {
+        "n_ventana": 100,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0.0
+      },
+      "estado_final": {
+        "modo": "OPERACION_NORMAL",
+        "aceptacion_automatica_demo": true,
+        "max_reintentos": 0
+      },
+      "recuperacion_verificada": true
+    }
+  ],
+  "antirruido": {
+    "alerta": "LATENCIA_P95",
+    "primera_emision": 1,
+    "segunda_emision_2min": 0,
+    "suprimidas_2min": 1,
+    "emision_31min": 1,
+    "cooldown_minutos": 30
+  },
+  "calidad": {
+    "linea_base_simulada": {
+      "n_etiquetados": 32,
+      "accuracy": 0.875,
+      "precision_macro": 0.9167,
+      "recall_macro": 0.875,
+      "f1_macro": 0.8809,
+      "falsas_elegibilidades_predichas": 4,
+      "casos_no_individuales": 24,
+      "nota_riesgo": "La prediccion INDIVIDUAL no implica aceptacion automatica; faltan puntaje y regla de umbral.",
+      "por_clase": {
+        "INDIVIDUAL": {
+          "soporte": 8,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8,
+          "aciertos": 8
+        },
+        "PAQUETE": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571,
+          "aciertos": 6
+        },
+        "AMBIGUA": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333,
+          "aciertos": 7
+        },
+        "FUERA_ALCANCE": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333,
+          "aciertos": 7
+        }
+      }
+    },
+    "degradado_simulado": {
+      "n_etiquetados": 32,
+      "accuracy": 0.6875,
+      "precision_macro": 0.8611,
+      "recall_macro": 0.6875,
+      "f1_macro": 0.6968,
+      "falsas_elegibilidades_predichas": 10,
+      "casos_no_individuales": 24,
+      "nota_riesgo": "La prediccion INDIVIDUAL no implica aceptacion automatica; faltan puntaje y regla de umbral.",
+      "por_clase": {
+        "INDIVIDUAL": {
+          "soporte": 8,
+          "precision": 0.4444,
+          "recall": 1.0,
+          "f1": 0.6154,
+          "aciertos": 8
+        },
+        "PAQUETE": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.625,
+          "f1": 0.7692,
+          "aciertos": 5
+        },
+        "AMBIGUA": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571,
+          "aciertos": 6
+        },
+        "FUERA_ALCANCE": {
+          "soporte": 8,
+          "precision": 1.0,
+          "recall": 0.375,
+          "f1": 0.5455,
+          "aciertos": 3
+        }
+      }
+    },
+    "alertas": [
+      {
+        "codigo": "CALIDAD_ACCURACY",
+        "severidad": "P1",
+        "observado": 0.6875,
+        "referencia": 0.875,
+        "umbral": 0.8,
+        "variacion_puntos_porcentuales": -18.75,
+        "accion": "Verificar etiquetas, drift y revisión humana; no publicar modelo automáticamente"
+      },
+      {
+        "codigo": "CALIDAD_F1_MACRO",
+        "severidad": "P1",
+        "observado": 0.6968,
+        "referencia": 0.8809,
+        "umbral": 0.8,
+        "variacion_puntos_porcentuales": -18.41,
+        "accion": "Verificar etiquetas, drift y revisión humana; no publicar modelo automáticamente"
+      }
+    ]
+  }
+}
