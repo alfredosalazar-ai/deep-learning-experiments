@@ -1,80 +1,104 @@
 # Deep Learning Experiments
 
-Repositorio de trabajo académico para desarrollar, evaluar y documentar experimentos de aprendizaje automático y procesamiento de lenguaje natural. Los proyectos se organizan por actividad e incluyen notebooks, código fuente, resultados y documentación para facilitar su consulta y reproducción en Google Colab.
+Repositorio de trabajo académico para desarrollar, evaluar, desplegar y documentar experimentos de aprendizaje automático, procesamiento de lenguaje natural y observabilidad de sistemas de inteligencia artificial. Las actividades se organizan de manera independiente, con código, notebooks, resultados y evidencias verificables, privilegiando la ejecución en **Google Colab, GitHub Actions y servicios en la nube**.
 
-> **Alcance:** los experimentos se desarrollan con fines académicos y de evaluación técnica. Los resultados obtenidos con datos sintéticos o muestras reducidas no constituyen evidencia suficiente para autorizar un despliegue productivo.
+> **Alcance:** los proyectos son prototipos académicos. Las métricas obtenidas con datos sintéticos, conjuntos reducidos o simulaciones offline **no acreditan desempeño productivo** ni autorizan decisiones financieras o tratamiento de datos bancarios reales.
 
 ## Índice de proyectos
 
-| Proyecto | Enfoque | Acceso |
+| Proyecto | Propósito y entregables principales | Acceso |
 |---|---|---|
-| **CIMA — Actividad 4** | Comparación experimental de modelos NLP de Hugging Face para clasificar consultas operativas de CHATBOT CIMA. | [Abrir carpeta](./cima-nlp-huggingface/) |
-| **CHATBOT CIMA — Actividad 5** | Preparación de datos, clasificación supervisada, ajuste de hiperparámetros y trazabilidad experimental con MLflow. | [Abrir carpeta](./Actividad5/) |
-| **CHATBOT CIMA — Actividad 6** | Evaluación y validación de modelos: métricas, matrices de confusión, ROC/AUC, baseline, validación cruzada, umbrales y comparación estadística. | [Abrir carpeta](./Actividad6/) · [Abrir en Colab](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/Actividad6/fuentes/CIMA_Actividad6_Evaluacion_Validacion.ipynb) |
+| **CIMA — Actividad 4** | Comparación exploratoria de modelos NLP de Hugging Face para clasificación de consultas. | [Carpeta](./cima-nlp-huggingface/) |
+| **CHATBOT CIMA — Actividad 5** | Preparación de datos sintéticos, clasificación supervisada, selección de modelos y trazabilidad de experimentos con MLflow. | [Carpeta](./Actividad5/) |
+| **CHATBOT CIMA — Actividad 6** | Evaluación de Regresión Logística y LinearSVC mediante métricas por clase, validación cruzada, ROC/AUC, umbrales y comparación estadística. | [Carpeta](./Actividad6/) · [Colab](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/Actividad6/fuentes/CIMA_Actividad6_Evaluacion_Validacion.ipynb) |
+| **CHATBOT CIMA — Fase II** | API FastAPI, interfaz web, modelo supervisado, Docker, pruebas automatizadas con GitHub Actions y despliegue académico en Render. | [Carpeta](./FaseII/) · [Interfaz](https://chatbot-cima-fase2.onrender.com/) · [Swagger](https://chatbot-cima-fase2.onrender.com/docs) |
+| **CHATBOT CIMA — Actividad 8** | Observabilidad, SLO y presupuestos de error, alertas, drift, simulaciones de incidentes, runbooks y registro de evidencias en MLflow. | [Carpeta](./Actividad8/) · [Notebook MLflow en Colab](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/Actividad8/notebooks/CIMA_Actividad8_MLflow_Colab.ipynb) |
 
-## Cómo empezar
+## Evolución de CHATBOT CIMA
 
-1. Selecciona la carpeta de la actividad que deseas revisar.
-2. Lee su `README.md` antes de ejecutar código; ahí se describen el alcance, las dependencias, las rutas de datos y las limitaciones conocidas.
-3. Abre el notebook indicado desde GitHub con **Open in Colab** o utiliza el enlace de Colab incluido en la documentación de cada proyecto.
-4. Ejecuta las celdas en orden. Algunas salidas se generan durante la ejecución y no se consideran resultados validados si no existe evidencia de la corrida.
-5. Consulta los archivos de `resultados/` y `informe/` para revisar métricas, visualizaciones y conclusiones de cada experimento.
+CHATBOT CIMA es el caso de estudio utilizado para clasificar consultas relacionadas con movimientos y procesos de pago de inmuebles adjudicados. Distingue cuatro intenciones:
 
-## Estructura del repositorio
+`INDIVIDUAL` · `PAQUETE` · `AMBIGUA` · `FUERA_ALCANCE`
+
+El alcance inicial se limita a **identificar y encaminar consultas**. La clasificación no confirma depósitos, no autoriza pagos y no sustituye las validaciones deterministas ni la revisión humana.
+
+| Etapa | Resultado documentado | Alcance de la evidencia |
+|---|---|---|
+| Actividad 4 | Comparación de modelos preentrenados de NLP. | Experimentos exploratorios con consultas sintéticas. |
+| Actividad 5 | Pipeline TF-IDF + modelos supervisados y artefactos de entrenamiento. | Desarrollo de modelos con datos sintéticos. |
+| Actividad 6 | En prueba reservada de **26 consultas**, Regresión Logística obtuvo **accuracy 1.0000** y LinearSVC **0.9615**. | Muestra pequeña; resultados **no generalizables automáticamente**. |
+| Fase II | API y frontend publicados; `/health` reportó servicio y modelo disponibles; pruebas web y API documentadas. | Despliegue académico funcional, con discrepancias de clasificación y política conservadora de revisión humana. |
+| Actividad 8 | GitHub Actions completó simulaciones offline de incidentes; **cinco runs MLflow** registrados como `FINISHED`. | Evidencia de laboratorio, **no monitoreo continuo de Render**. |
+
+### Resultados visibles — Actividad 8
+
+Las siguientes métricas pertenecen a **escenarios simulados** y permiten comprobar la lógica de alertamiento y recuperación:
+
+| Incidente | Condición normal | Condición de alerta | Recuperación simulada |
+|---|---:|---:|---:|
+| INC-01 · Latencia P95 | 450 ms | 7,200 ms | 520 ms |
+| INC-02 · Drift PSI | 0.000 | 2.869 | 0.000 |
+| INC-03 · Tasa HTTP 5xx | 0 % | 20 % | 0 % |
+
+**Control antirruido:** primera detección, 1 alerta emitida; repetición a los 2 minutos, 1 suprimida; detección a los 31 minutos, 1 nueva emisión. Ventana de supresión de 30 minutos.
+
+**Calidad predictiva ficticia:** accuracy de 87.50 % a 68.75 % y F1 macro de 88.09 % a 69.68 % en una prueba con 32 pares sintéticos de etiquetas y predicciones. Estos valores **no son métricas del modelo desplegado**.
+
+[Resultados y gráficos de Actividad 8](./Actividad8/README.md) · [Evidencias MLflow](./Actividad8/evidencias/mlflow/) · [Notebook reproducible](./Actividad8/notebooks/CIMA_Actividad8_MLflow_Colab.ipynb)
+
+## Arquitectura y trabajo completamente en la nube
+
+El desarrollo se ha organizado para operar sin instalaciones locales: Google Colab permite ejecutar notebooks; GitHub almacena versiones, documentación y resultados; GitHub Actions realiza pruebas y simulaciones; Render aloja el prototipo FastAPI de Fase II.
+
+La ejecución local de Docker fue sustituida **deliberadamente** por construcción y pruebas en la infraestructura de GitHub Actions, debido a las restricciones de uso del equipo laboral y la ausencia de un equipo personal disponible. Esta decisión está documentada en [Fase II](./FaseII/README.md); **no se presenta como una ejecución local efectuada**.
+
+La Actividad 8 ejecuta pruebas de observabilidad **offline** de manera independiente del servicio público. Los registros MLflow se generan en sesiones temporales de Colab a partir de artefactos del laboratorio; la publicación de resultados en GitHub requiere una exportación explícita.
+
+## Cómo consultar y reproducir
+
+1. Entra a la carpeta del proyecto y lee su `README.md` para conocer alcance, dependencias, datos y resultados disponibles.
+2. Cuando exista un notebook, utiliza el enlace **Open in Colab** y selecciona el entorno de ejecución indicado en la propia actividad.
+3. Ejecuta las celdas en orden y conserva las salidas. Las simulaciones y las métricas derivadas de datos etiquetados deben identificarse por separado.
+4. Para pipelines automatizados, revisa la pestaña **Actions** y las evidencias generadas por la ejecución correspondiente.
+5. Contrasta tablas y visualizaciones con los artefactos publicados: un workflow en verde confirma que se ejecutó, **no demuestra por sí solo precisión predictiva ni disponibilidad continua**.
+
+## Estructura principal
 
 ```text
 deep-learning-experiments/
 ├── README.md
-├── cima-nlp-huggingface/   # Actividad 4: experimentos NLP con Hugging Face
-├── Actividad5/             # Preparación, entrenamiento y seguimiento de modelos
-└── Actividad6/             # Evaluación, validación y análisis de decisiones
+├── .github/
+│   └── workflows/              # Validación, pruebas y simulaciones remotas
+├── cima-nlp-huggingface/       # Actividad 4 — NLP preentrenado
+├── Actividad5/                 # Entrenamiento y MLflow
+├── Actividad6/                 # Evaluación estadística y umbrales
+├── FaseII/                     # API, frontend, Docker y despliegue
+└── Actividad8/                 # Observabilidad, incidentes y MLflow
 ```
 
-Cada actividad mantiene su documentación y artefactos propios. Los resultados de una actividad anterior se conservan como referencia y no deben sobrescribirse con nuevas ejecuciones. Cuando una actividad utilice modelos o datasets de una entrega previa, la documentación específica debe indicar su origen y versión.
+Cada proyecto mantiene sus rutas específicas; no se impone una estructura idéntica a todas las actividades. Se conservan los resultados de etapas anteriores como referencia sin sobrescribirlos con nuevas pruebas.
 
-## Proyecto CHATBOT CIMA
+## Reproducibilidad, trazabilidad y límites
 
-CHATBOT CIMA es el caso de aplicación utilizado en estas actividades para explorar la clasificación de consultas relacionadas con movimientos y procesos de pago de inmuebles adjudicados. La experimentación considera cuatro categorías:
+- Documentar dependencias, versión de Python, particiones, semillas y artefactos de cada ejecución cuando apliquen.
+- Mantener separados entrenamiento, selección de hiperparámetros, selección de umbrales y evaluación independiente.
+- Reportar métricas por clase, incertidumbre estadística y limitaciones cuando la muestra sea pequeña.
+- Diferenciar **monitoreo técnico** (disponibilidad, latencia y HTTP 5xx), **calidad predictiva** (requiere etiquetas) y **simulaciones de laboratorio**.
+- Registrar incidentes, severidades, condiciones de alerta, runbooks, acciones simuladas y criterios de recuperación.
+- No tratar la alerta de drift como prueba automática de deterioro de precisión: requiere análisis adicional.
+- No publicar credenciales, datos personales, información bancaria real ni artefactos institucionales no autorizados.
 
-- `INDIVIDUAL`
-- `PAQUETE`
-- `AMBIGUA`
-- `FUERA_ALCANCE`
+## Documentación y navegación
 
-Las actividades 5 y 6 utilizan datos sintéticos. En particular, la evaluación de la Actividad 6 trabaja con una prueba reservada pequeña; sus métricas son exploratorias y no demuestran por sí mismas la generalización sobre consultas reales. El modelo candidato y cualquier política de umbral requieren supervisión humana, validaciones deterministas y evidencia adicional antes de considerar un uso operativo.
+| Recurso | Enlace |
+|---|---|
+| Repositorio | [deep-learning-experiments](https://github.com/alfredosalazar-ai/deep-learning-experiments) |
+| Actividad 4 | [CIMA NLP Hugging Face](./cima-nlp-huggingface/README.md) |
+| Actividad 5 | [Entrenamiento y experimentación](./Actividad5/) |
+| Actividad 6 | [Evaluación y validación](./Actividad6/) |
+| Fase II | [Despliegue y pruebas](./FaseII/README.md) · [Evidencias](./FaseII/evidencias/) |
+| Actividad 8 | [Observabilidad y resultados](./Actividad8/README.md) · [Evidencias MLflow](./Actividad8/evidencias/mlflow/) |
+| Interfaz académica | [CHATBOT CIMA en Render](https://chatbot-cima-fase2.onrender.com/) |
+| Documentación API | [Swagger `/docs`](https://chatbot-cima-fase2.onrender.com/docs) |
 
-## Reproducibilidad y trazabilidad
-
-- Mantener fijas y documentadas las versiones de dependencias empleadas por cada notebook.
-- Conservar la semilla, las particiones del dataset y la identificación de los archivos usados en cada ejecución.
-- Separar los datos utilizados para ajustar modelos o umbrales de los datos reservados para evaluación final.
-- Registrar métricas, predicciones, gráficas y metadatos como artefactos de una ejecución, evitando editar manualmente los resultados.
-- Declarar las limitaciones del dataset, el tamaño de la muestra y cualquier simulación experimental.
-
-## Estructura recomendada por actividad
-
-```text
-ActividadN/
-├── README.md
-├── CHANGELOG.md
-├── requirements.txt
-├── datos/
-├── modelos/      # Cuando aplique
-├── fuentes/      # Notebooks y scripts
-├── resultados/   # Métricas, predicciones y gráficas generadas
-├── informe/      # Reporte técnico
-└── evidencias/   # Evidencias solicitadas por la actividad
-```
-
-No todas las carpetas aplican a todas las actividades; consulta el README específico de cada una.
-
-## Aviso de uso
-
-El repositorio documenta ejercicios académicos y experimentales. No contiene una autorización para procesar datos bancarios reales ni para automatizar decisiones financieras. No publiques credenciales, tokens, datos personales o información operativa confidencial.
-
-## Navegación
-
-- [Repositorio](https://github.com/alfredosalazar-ai/deep-learning-experiments)
-- [Actividad 4 — CIMA NLP con Hugging Face](https://github.com/alfredosalazar-ai/deep-learning-experiments/tree/main/cima-nlp-huggingface)
-- [Actividad 5 — CHATBOT CIMA](https://github.com/alfredosalazar-ai/deep-learning-experiments/tree/main/Actividad5)
-- [Actividad 6 — CHATBOT CIMA](https://github.com/alfredosalazar-ai/deep-learning-experiments/tree/main/Actividad6)
+> **Aviso:** el servicio alojado en Render puede tardar en responder después de un periodo de inactividad debido a las condiciones del plan gratuito. Este repositorio documenta un prototipo académico, no una plataforma bancaria productiva.
