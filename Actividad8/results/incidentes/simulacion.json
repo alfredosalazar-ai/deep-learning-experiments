@@ -1,0 +1,135 @@
+{
+  "origen": "SIMULACION_OFFLINE",
+  "modelo_en_render_modificado": false,
+  "nota": "Resultados fabricados para verificar la logica de alertas y runbooks; NO son incidentes reales.",
+  "incidentes": [
+    {
+      "id": "INC-01",
+      "nombre": "Latencia artificial",
+      "tipo": "SIMULACION_AISLADA",
+      "fecha_utc": "2026-11-13T00:46:58+00:00",
+      "antes": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 450,
+        "n_latencia": 30
+      },
+      "alertas_antes": [],
+      "durante": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 7200,
+        "n_latencia": 30
+      },
+      "alertas_durante": [
+        {
+          "codigo": "LATENCIA_P95",
+          "severidad": "P2",
+          "observado": 7200,
+          "umbral": 3000,
+          "accion_sugerida": "Ejecutar RB-02",
+          "momento_utc": "2026-11-13T00:46:58+00:00"
+        }
+      ],
+      "runbook_ejecutado_simulado": "RB-02",
+      "accion_simulada": "Aislar carga sintetica; reducir concurrencia y comparar el P95",
+      "despues": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "latencia_p95_ms": 520,
+        "n_latencia": 30
+      },
+      "alertas_despues": [],
+      "recuperacion_simulada": true
+    },
+    {
+      "id": "INC-02",
+      "nombre": "Drift sintetico de clases",
+      "tipo": "SIMULACION_AISLADA",
+      "fecha_utc": "2026-11-13T00:46:58+00:00",
+      "antes": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 0.0
+      },
+      "alertas_antes": [],
+      "durante": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 2.8688661210628035
+      },
+      "alertas_durante": [
+        {
+          "codigo": "DRIFT_CRITICO",
+          "severidad": "P1",
+          "observado": 2.8688661210628035,
+          "umbral": 0.25,
+          "accion_sugerida": "Ejecutar RB-03; verificar etiquetas",
+          "momento_utc": "2026-11-13T00:46:58+00:00"
+        }
+      ],
+      "runbook_ejecutado_simulado": "RB-03",
+      "accion_simulada": "Suspender aceptacion simulada, revisar referencia y restaurar mezcla sintetica",
+      "despues": {
+        "n_ventana": 50,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0,
+        "n_drift": 100,
+        "drift_psi": 0.0
+      },
+      "alertas_despues": [],
+      "recuperacion_simulada": true
+    },
+    {
+      "id": "INC-03",
+      "nombre": "Fallas HTTP 503 artificiales",
+      "tipo": "SIMULACION_AISLADA",
+      "fecha_utc": "2026-11-13T00:46:58+00:00",
+      "antes": {
+        "n_ventana": 100,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0.0
+      },
+      "alertas_antes": [],
+      "durante": {
+        "n_ventana": 100,
+        "disponibilidad": 0.8,
+        "error_5xx_rate": 0.2
+      },
+      "alertas_durante": [
+        {
+          "codigo": "SLO_DISPONIBILIDAD",
+          "severidad": "P1",
+          "observado": 0.8,
+          "umbral": 0.99,
+          "accion_sugerida": "Ejecutar RB-01; comprobar /health",
+          "momento_utc": "2026-11-13T00:46:58+00:00"
+        },
+        {
+          "codigo": "ERRORES_5XX",
+          "severidad": "P1",
+          "observado": 0.2,
+          "umbral": 0.01,
+          "accion_sugerida": "Ejecutar RB-01; no reintentar sin limite",
+          "momento_utc": "2026-11-13T00:46:58+00:00"
+        }
+      ],
+      "runbook_ejecutado_simulado": "RB-01",
+      "accion_simulada": "Activar contingencia simulada y reintentos limitados; restablecer servicio ficticio",
+      "despues": {
+        "n_ventana": 100,
+        "disponibilidad": 1.0,
+        "error_5xx_rate": 0.0
+      },
+      "alertas_despues": [],
+      "recuperacion_simulada": true
+    }
+  ]
+}

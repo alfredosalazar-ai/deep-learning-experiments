@@ -1,0 +1,47 @@
+{
+  "generadas": 5,
+  "emitidas": [
+    {
+      "codigo": "SLO_DISPONIBILIDAD",
+      "severidad": "P1",
+      "observado": 0.96,
+      "umbral": 0.99,
+      "accion_sugerida": "Ejecutar RB-01; comprobar /health",
+      "momento_utc": "2026-11-13T00:47:19+00:00"
+    },
+    {
+      "codigo": "ERRORES_5XX",
+      "severidad": "P1",
+      "observado": 0.04,
+      "umbral": 0.01,
+      "accion_sugerida": "Ejecutar RB-01; no reintentar sin limite",
+      "momento_utc": "2026-11-13T00:47:19+00:00"
+    },
+    {
+      "codigo": "LATENCIA_P95",
+      "severidad": "P2",
+      "observado": 6500,
+      "umbral": 3000,
+      "accion_sugerida": "Ejecutar RB-02",
+      "momento_utc": "2026-11-13T00:47:19+00:00"
+    },
+    {
+      "codigo": "FALSA_ELEGIBILIDAD",
+      "severidad": "P0",
+      "observado": 1,
+      "umbral": 0,
+      "accion_sugerida": "Detener aceptacion automatica en escenario controlado y escalar",
+      "momento_utc": "2026-11-13T00:47:19+00:00"
+    },
+    {
+      "codigo": "DRIFT_CRITICO",
+      "severidad": "P1",
+      "observado": 0.8,
+      "umbral": 0.25,
+      "accion_sugerida": "Ejecutar RB-03; verificar etiquetas",
+      "momento_utc": "2026-11-13T00:47:19+00:00"
+    }
+  ],
+  "suprimidas": 0,
+  "nota": "Las respuestas correctivas son recomendaciones; no cambia estado de Render ni del modelo."
+}
