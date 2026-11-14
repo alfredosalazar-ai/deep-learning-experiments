@@ -1,6 +1,6 @@
 # CHATBOT CIMA — Actividad 9 | Escalabilidad, FinOps y gobernanza responsable
 
-**Estatus:** propuesta académica de rediseño; no despliegue productivo.
+**Propuesta de rediseño sin despliegue productivo.** 
 
 ## Resumen de la entrega
 
