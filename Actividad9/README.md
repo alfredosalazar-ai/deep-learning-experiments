@@ -30,4 +30,4 @@ No se afirma una auditoría empírica de *fairness* por grupos protegidos: los d
 - [Actividad 8 — observabilidad offline](../Actividad8/)
 - [Repositorio principal](https://github.com/alfredosalazar-ai/deep-learning-experiments)
 
-**Alcance de seguridad:** no usar datos personales ni bancarios, no conectar Nueva CIE 2.1 ni habilitar aprobaciones o pagos automáticos en la aplicación académica.
+**Alcance de seguridad:** no se usan datos personales ni bancarios, no se ha conectado al archivo base Nueva CIE 2.1 ni se habilitan aprobaciones o pagos automáticos.
