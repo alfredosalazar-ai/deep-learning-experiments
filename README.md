@@ -13,6 +13,7 @@ Repositorio de trabajo académico para desarrollar, evaluar, desplegar y documen
 | **CHATBOT CIMA — Actividad 6** | Evaluación de Regresión Logística y LinearSVC mediante métricas por clase, validación cruzada, ROC/AUC, umbrales y comparación estadística. | [Carpeta](./Actividad6/) · [Colab](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/Actividad6/fuentes/CIMA_Actividad6_Evaluacion_Validacion.ipynb) |
 | **CHATBOT CIMA — Fase II** | API FastAPI, interfaz web, modelo supervisado, Docker, pruebas automatizadas con GitHub Actions y despliegue académico en Render. | [Carpeta](./FaseII/) · [Interfaz](https://chatbot-cima-fase2.onrender.com/) · [Swagger](https://chatbot-cima-fase2.onrender.com/docs) |
 | **CHATBOT CIMA — Actividad 8** | Observabilidad, SLO y presupuestos de error, alertas, drift, simulaciones de incidentes, runbooks y registro de evidencias en MLflow. | [Carpeta](./Actividad8/) · [Notebook MLflow en Colab](https://colab.research.google.com/github/alfredosalazar-ai/deep-learning-experiments/blob/main/Actividad8/notebooks/CIMA_Actividad8_MLflow_Colab.ipynb) |
+| **CHATBOT CIMA — Actividad 9** | Rediseño de escalabilidad vertical y horizontal, evaluación FinOps, auditoría de gobernanza y plan de escalamiento responsable. Incluye informe Word, anexo Excel y diagramas. | [Carpeta](./Actividad9/) · [Reporte](./Actividad9/Actividad_9_Analisis_Escalabilidad_FinOps_Gobernanza_CHATBOT_CIMA_Alfredo_Salazar.docx) · [Anexo](./Actividad9/Anexo_Tecnico_FinOps_CIMA_Actividad9.xlsx) |
 
 ## Evolución de CHATBOT CIMA
 
@@ -29,6 +30,7 @@ El alcance inicial se limita a **identificar y encaminar consultas**. La clasifi
 | Actividad 6 | En prueba reservada de **26 consultas**, Regresión Logística obtuvo **accuracy 1.0000** y LinearSVC **0.9615**. | Muestra pequeña; resultados **no generalizables automáticamente**. |
 | Fase II | API y frontend publicados; `/health` reportó servicio y modelo disponibles; pruebas web y API documentadas. | Despliegue académico funcional, con discrepancias de clasificación y política conservadora de revisión humana. |
 | Actividad 8 | GitHub Actions completó simulaciones offline de incidentes; **cinco runs MLflow** registrados como `FINISHED`. | Evidencia de laboratorio, **no monitoreo continuo de Render**. |
+| Actividad 9 | Propuesta documentada de escalabilidad y optimización FinOps; auditoría de riesgos y plan de gobernanza y escalamiento responsable. | **Análisis prospectivo**, no implementación ni certificación. Costos y cargas modelados con supuestos. |
 
 ### Resultados visibles — Actividad 8
 
@@ -46,13 +48,26 @@ Las siguientes métricas pertenecen a **escenarios simulados** y permiten compro
 
 [Resultados y gráficos de Actividad 8](./Actividad8/README.md) · [Evidencias MLflow](./Actividad8/evidencias/mlflow/) · [Notebook reproducible](./Actividad8/notebooks/CIMA_Actividad8_MLflow_Colab.ipynb)
 
+## Actividad 9 — Escalabilidad, costos y gobernanza
+
+La Actividad 9 estudia cómo evolucionaría CIMA desde un prototipo académico a una solución de mayor capacidad **sin confundir una propuesta arquitectónica con un despliegue ya ejecutado**. El análisis incluye:
+
+| Dimensión | Resultado documentado | Evidencia |
+|---|---|---|
+| Escalabilidad | Comparación vertical/horizontal, cuellos de botella y arquitectura objetivo por etapas. | [Diagramas actual](./Actividad9/Arquitectura_Actual_CIMA.png) y [propuesta](./Actividad9/Arquitectura_Propuesta_CIMA.png) |
+| FinOps | **6 configuraciones** y **3 volúmenes hipotéticos**, con escenarios editables de costo y capacidad. | [Anexo técnico XLSX](./Actividad9/Anexo_Tecnico_FinOps_CIMA_Actividad9.xlsx) |
+| Gobernanza y ética | Matriz de riesgos, controles y estrategia de evaluación de fairness; sin afirmar una auditoría empírica de grupos protegidos. | [Reporte técnico](./Actividad9/Actividad_9_Analisis_Escalabilidad_FinOps_Gobernanza_CHATBOT_CIMA_Alfredo_Salazar.docx) |
+| Escalamiento responsable | Etapas con puertas de control, métricas de aceptación y revisión humana. | [README de Actividad 9](./Actividad9/README.md) |
+
+**Lectura de resultados:** los precios públicos son referencias de planificación, no cotizaciones; los volúmenes, tiempos de CPU y utilización son **hipótesis de escenario**, no mediciones en Render. Los resultados de fairness por población no están medidos porque el dataset sintético no es apropiado para ese propósito. La recomendación es fortalecer primero la calidad predictiva, controles y seguridad antes de escalar infraestructura o conectar fuentes institucionales.
+
 ## Arquitectura y trabajo completamente en la nube
 
 El desarrollo se ha organizado para operar sin instalaciones locales: Google Colab permite ejecutar notebooks; GitHub almacena versiones, documentación y resultados; GitHub Actions realiza pruebas y simulaciones; Render aloja el prototipo FastAPI de Fase II.
 
 La ejecución local de Docker fue sustituida **deliberadamente** por construcción y pruebas en la infraestructura de GitHub Actions, debido a las restricciones de uso del equipo laboral y la ausencia de un equipo personal disponible. Esta decisión está documentada en [Fase II](./FaseII/README.md); **no se presenta como una ejecución local efectuada**.
 
-La Actividad 8 ejecuta pruebas de observabilidad **offline** de manera independiente del servicio público. Los registros MLflow se generan en sesiones temporales de Colab a partir de artefactos del laboratorio; la publicación de resultados en GitHub requiere una exportación explícita.
+La Actividad 8 ejecuta pruebas de observabilidad **offline** de manera independiente del servicio público. Los registros MLflow se generan en sesiones temporales de Colab a partir de artefactos del laboratorio; la publicación de resultados en GitHub requiere una exportación explícita. La Actividad 9 es un ejercicio de diseño y análisis, no modifica el servicio de Fase II.
 
 ## Cómo consultar y reproducir
 
@@ -73,7 +88,8 @@ deep-learning-experiments/
 ├── Actividad5/                 # Entrenamiento y MLflow
 ├── Actividad6/                 # Evaluación estadística y umbrales
 ├── FaseII/                     # API, frontend, Docker y despliegue
-└── Actividad8/                 # Observabilidad, incidentes y MLflow
+├── Actividad8/                 # Observabilidad, incidentes y MLflow
+└── Actividad9/                 # Escalabilidad, FinOps y gobernanza
 ```
 
 Cada proyecto mantiene sus rutas específicas; no se impone una estructura idéntica a todas las actividades. Se conservan los resultados de etapas anteriores como referencia sin sobrescribirlos con nuevas pruebas.
@@ -98,6 +114,7 @@ Cada proyecto mantiene sus rutas específicas; no se impone una estructura idén
 | Actividad 6 | [Evaluación y validación](./Actividad6/) |
 | Fase II | [Despliegue y pruebas](./FaseII/README.md) · [Evidencias](./FaseII/evidencias/) |
 | Actividad 8 | [Observabilidad y resultados](./Actividad8/README.md) · [Evidencias MLflow](./Actividad8/evidencias/mlflow/) |
+| Actividad 9 | [Rediseño, FinOps y gobernanza](./Actividad9/README.md) · [Reporte Word](./Actividad9/Actividad_9_Analisis_Escalabilidad_FinOps_Gobernanza_CHATBOT_CIMA_Alfredo_Salazar.docx) · [Anexo Excel](./Actividad9/Anexo_Tecnico_FinOps_CIMA_Actividad9.xlsx) |
 | Interfaz académica | [CHATBOT CIMA en Render](https://chatbot-cima-fase2.onrender.com/) |
 | Documentación API | [Swagger `/docs`](https://chatbot-cima-fase2.onrender.com/docs) |
 
