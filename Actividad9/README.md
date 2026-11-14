@@ -6,7 +6,7 @@
 
 | Descripción | Resultado | Evidencia |
 |---|---|---|
-| Arquitectura y escalabilidad | Comparación vertical/horizontal, cuellos de botella, propuesta por etapas | [Reporte PDF](Actividad 9 Escalabilidad Y Gobernanza CIMA Alfredo Salazar.pdf), diagramas PNG |
+| Arquitectura y escalabilidad | Comparación vertical/horizontal, cuellos de botella, propuesta por etapas | [Reporte PDF](Actividad_9_Escalabilidad_CIMA.pdf), diagramas PNG |
 | FinOps y costos | Precios de referencia, 6 configuraciones, 3 volúmenes hipotéticos, fórmulas de costo/capacidad | [Anexo Excel](Anexo_Tecnico_FinOps_CIMA_Actividad9.xlsx) |
 | Ética, riesgo y cumplimiento | Riesgos de clasificación, trazabilidad, LFPDPPP, ISO 42001 y NIST AI RMF | Reporte, hojas `Fairness y sesgos` y `Riesgos y controles` |
 | Escalamiento responsable | Puertas de control, responsables, SLO propuestos, límites de uso | Reporte, sección 8 |
