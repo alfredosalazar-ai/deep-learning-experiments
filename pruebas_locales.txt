@@ -1,0 +1,14 @@
+test_invalid_eligibility (test_pipeline.TestContract.test_invalid_eligibility) ... ok
+test_missing (test_pipeline.TestContract.test_missing) ... ok
+test_valid (test_pipeline.TestContract.test_valid) ... ok
+test_valid_eligibility (test_pipeline.TestContract.test_valid_eligibility) ... ok
+test_bad_label (test_pipeline.TestData.test_bad_label) ... ok
+test_duplicate (test_pipeline.TestData.test_duplicate) ... ok
+test_manifest (test_pipeline.TestData.test_manifest) ... ok
+test_missing (test_pipeline.TestData.test_missing) ... ok
+test_ok (test_pipeline.TestData.test_ok) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK

@@ -1,0 +1,74 @@
+name: CIMA Fase III - MLOps GitOps CI y artefactos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'FaseIII/**'
+      - '.github/workflows/fase3-ci.yml'
+  pull_request:
+    paths:
+      - 'FaseIII/**'
+      - '.github/workflows/fase3-ci.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validar-y-versionar:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v7
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Pruebas de codigo y contrato
+        working-directory: FaseIII
+        run: python -m unittest discover -s tests -v
+      - name: Validar datos y registrar huellas SHA256
+        working-directory: FaseIII
+        run: python -m src.pipeline --repo-root .. --out evidencias/pipeline
+      - name: Guardar manifiesto reproducible
+        uses: actions/upload-artifact@v7
+        with:
+          name: cima-fase3-ci-${{ github.run_number }}
+          path: FaseIII/evidencias/pipeline/manifest.json
+          if-no-files-found: error
+
+  verificar-contenedor-fase2:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v7
+      - name: Construir contenedor Fase II
+        run: docker build -t cima-fase3-smoke FaseII
+      - name: Arrancar API aislada en runner
+        run: docker run --rm -d --name cima-fase3-smoke -p 8000:8000 -e PORT=8000 cima-fase3-smoke
+      - name: Comprobar health y clasificacion sintetica
+        run: |
+          for n in $(seq 1 40); do
+            if curl -fsS --max-time 3 http://127.0.0.1:8000/health > /tmp/cima-health.json; then break; fi
+            sleep 2
+          done
+          cat /tmp/cima-health.json
+          python - <<'PYHEALTH'
+          import json
+          with open('/tmp/cima-health.json') as f: data=json.load(f)
+          assert data['status']=='ok' and data['model_loaded'] is True
+          PYHEALTH
+          curl -fsS --max-time 25 -H 'Content-Type: application/json' \
+            -d '{"texto":"Solicito confirmar el pago asociado al folio sintetico 12345."}' \
+            http://127.0.0.1:8000/predict > /tmp/cima-predict.json
+          cat /tmp/cima-predict.json
+          python - <<'PYPRED'
+          import json
+          with open('/tmp/cima-predict.json') as f: p=json.load(f)
+          for k in ('clase_predicha','decision_operativa','requiere_revision_humana','version_modelo'):
+              assert k in p, k
+          assert p['decision_operativa'] in ('REVISION_HUMANA','FLUJO_INDIVIDUAL')
+          PYPRED
+      - name: Diagnostico y limpieza
+        if: always()
+        run: |
+          docker logs cima-fase3-smoke || true
+          docker rm -f cima-fase3-smoke || true
