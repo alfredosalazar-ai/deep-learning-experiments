@@ -1,2 +1,0 @@
-PENDIENTE: incluir la URL real al video de entrevista cuando esté grabado y publicada con acceso de visualización para el docente.
-No se ha generado ningún video en esta fase.
