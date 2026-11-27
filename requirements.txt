@@ -1,2 +1,0 @@
-# Pipeline offline: solo biblioteca estandar de Python >= 3.11.
-# No es necesario instalar el modelo ni descargar paquetes.
