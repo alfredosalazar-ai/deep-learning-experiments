@@ -1,0 +1,17 @@
+id,texto,clase_real
+S01,Quiero confirmar el pago del folio sintetico 10001,INDIVIDUAL
+S02,Validar el movimiento de un folio 10002,INDIVIDUAL
+S03,Consulta el estatus del pago folio 10003,INDIVIDUAL
+S04,Revisar el finiquito del folio 10004,INDIVIDUAL
+S05,Verificar treinta pagos de un paquete,PAQUETE
+S06,Comparar los folios 10006 y 10007,PAQUETE
+S07,Conciliar pagos de varias adjudicaciones,PAQUETE
+S08,Revisar el archivo con multiples referencias,PAQUETE
+S09,No se cual es mi referencia de pago,AMBIGUA
+S10,Hay un movimiento pero no tengo folio,AMBIGUA
+S11,Podrian indicarme que dato debo proporcionar,AMBIGUA
+S12,No identifico a que folio se refiere el deposito,AMBIGUA
+S13,Quiero reservar un hotel para vacaciones,FUERA_ALCANCE
+S14,Necesito una receta de cocina,FUERA_ALCANCE
+S15,Como obtener boletos para un concierto,FUERA_ALCANCE
+S16,Busco recomendaciones de turismo,FUERA_ALCANCE
